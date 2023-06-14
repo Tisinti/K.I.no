@@ -1,5 +1,5 @@
 
-CineStats <- read.csv("/home/tisinti/Projekte/Movie_Attendence_Prediction/Testing/Test_data.csv")
+CineStats <- read.csv("~/Projekte/Movie_Attendence_Prediction/Data/Raw/CineAsta_Movie_Data_Raw.csv")
 
 CineStats$Date <- as.Date(CineStats$Date, format = "%d.%m.%Y") #String zu Datum konvertieren
 

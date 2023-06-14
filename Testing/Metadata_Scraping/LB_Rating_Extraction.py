@@ -49,9 +49,9 @@ class Movie:
             for movie in self.metadata:
                 if self.metadata[self.index]['title'] == movie['title']:
                     count += 1
-            # count is at least 1 because the search title is always in the list itself
-            if count > 1:
-                return True
+                    # count is at least 1 because the search title is always in the list itself
+                    if count > 1:
+                        return True
         return False
 
     def get_release_date(self):
@@ -94,5 +94,5 @@ class Movie:
 
 
 if __name__ == "__main__":
-    search_result = MovieSearch("Red Rocket")
-    print(search_result.get_movie(0))
+    search_result = MovieSearch("The Nightingale")
+    print(search_result.most_likely_movie)
