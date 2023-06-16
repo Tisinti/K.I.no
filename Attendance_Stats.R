@@ -1,7 +1,26 @@
+rm(list = ls())
 
-CineStats <- read.csv("~/Projekte/Movie_Attendence_Prediction/Data/Raw/CineAsta_Movie_Data_Raw.csv")
+library("ggplot2")
 
-CineStats$Date <- as.Date(CineStats$Date, format = "%d.%m.%Y") #String zu Datum konvertieren
+#read in all the data as a dataframe
+raw_data <- read.csv("~/Projekte/Movie_Attendence_Prediction/Data/Raw_Data/CineAsta_Movie_Data_Raw.csv")
+#convert the dates into date type
+raw_data$Date <- as.Date(raw_data$Date, format = "%d.%m.%Y") 
+
+#order the df by date
+CineStats <- raw_data[order(raw_data$Date), ]
+
+CineStats["Weekdays"] <- weekdays(CineStats$Date)
+
+#mean of visitors for every weekday
+days <- c("Dienstag", "Mittwoch", "Donnerstag")
+bar <- ggplot(data=CineStats, aes(x=Weekdays, y=Attendance)) +
+  geom_bar(position = "dodge",
+           stat = "summary",
+           fun = "mean") +
+  scale_x_discrete(limits = days)
+bar
+
 
 plot(x = CineStats$Date, y = CineStats$Attendance, 
      xlab = "Zeit", ylab = "Besucherzahl", main = "SoSe 2023",
@@ -11,7 +30,7 @@ points(x = CineStats$Date, y = CineStats$Attendance, pch = 16, col = "darkblue")
 ?plot
 
 
-abline(h = mean(CineStats$Attendance), col = "red", lwd = 2, lty  =2)#
+abline(h = median(CineStats$Attendance), col = "red", lwd = 2, lty  =2)
 ?axis
 
 rm(list = ls())
