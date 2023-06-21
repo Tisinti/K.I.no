@@ -52,7 +52,6 @@ class Movie:
         return link
 
     def get_letterboxd_rating(self):
-        print(f"A {time.process_time()}")
         url = self.get_link()
         html = requests.get(url)
         junk = BeautifulSoup(html.content, 'html.parser')
@@ -62,7 +61,6 @@ class Movie:
             results = junk.find('meta', {"name": "twitter:data2", "content": True})
             # remove everything after first whitespace "3.5 out of 5" but we only want 3.5
             rating = re.search('\S+', results['content']).group()
-            print(f"B {time.process_time()}")
             return float(rating)
         # Incase the movie does not have a rating on Letterboxd
         except Exception as e:

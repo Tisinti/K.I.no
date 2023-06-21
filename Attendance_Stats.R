@@ -11,16 +11,16 @@ raw_data$Date <- as.Date(raw_data$Date, format = "%d.%m.%Y")
 CineStats <- raw_data[order(raw_data$Date), ]
 
 CineStats["Weekdays"] <- weekdays(CineStats$Date)
+year(CineStats$Date)
 
 #mean of visitors for every weekday
 days <- c("Dienstag", "Mittwoch", "Donnerstag")
 bar <- ggplot(data=CineStats, aes(x=Weekdays, y=Attendance)) +
-  geom_bar(position = "dodge",
-           stat = "summary",
-           fun = "mean") +
+  geom_boxplot() + 
   scale_x_discrete(limits = days)
 bar
 
+table(CineStats['Weekdays'])
 
 plot(x = CineStats$Date, y = CineStats$Attendance, 
      xlab = "Zeit", ylab = "Besucherzahl", main = "SoSe 2023",
