@@ -60,7 +60,7 @@ class Movie:
             # remove everything after first whitespace "3.5 out of 5" but we only want 3.5
             rating = re.search('\S+', results['content']).group()
             return float(rating) * 2
-        # Incase the movie does not have a rating on Letterboxd
+        # In case the movie does not have a rating on Letterboxd
         except Exception as e:
             return float('NaN')
     
