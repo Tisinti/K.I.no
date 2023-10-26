@@ -10,6 +10,7 @@ class SearchMovie:
         self.search = search
         self.API_KEY = os.getenv('TMDB_API_KEY')
         self.results = self.find_movies()
+
         #most likely match (first result)
         self.ml_match = Movie(self.results[0])
 

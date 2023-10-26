@@ -10,10 +10,22 @@ class Movie:
         self.metadata = metadata
         self.title = self.get_TMBD_title()
         self.release_date = self.get_release_date()
-        self.rating = self.get_letterboxd_rating()
         self.letterboxd_link = self.get_letterboxd_link()
         self.genre = self.convert_genre_ids()
-        self.tmdb_rating = self.get_TMDB_rating()
+        self.rating = self.compare_ratings()
+
+    def compare_ratings(self):
+        tmdb_rating = self.get_TMDB_rating()
+        #TMDB Rating should be over 0 and by more than 15 people
+        if tmdb_rating > 0 and self.metadata['vote_count'] > 15:
+            return tmdb_rating
+        
+        ltb_rating = self.get_letterboxd_rating()
+        #LTB Rating should exist LULE
+        if ltb_rating != None:
+            return ltb_rating
+        else:
+            return None
 
     #returns the release date of the movie
     def get_release_date(self):
@@ -61,7 +73,7 @@ class Movie:
             return float(rating) * 2
         # In case the movie does not have a rating on Letterboxd
         except Exception as e:
-            return float('NaN')
+            return None
     
     def get_TMDB_rating(self):
         return self.metadata['vote_average']
