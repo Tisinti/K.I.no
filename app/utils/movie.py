@@ -7,7 +7,6 @@ from datetime import datetime
 
 class Movie:
     def __init__(self, metadata):
-        print(metadata['title'])
         self.metadata = metadata
         self.title = self.get_TMBD_title()
         self.release_date = self.get_release_date()
