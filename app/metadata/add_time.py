@@ -1,6 +1,10 @@
 from datetime import datetime
+import pandas as pd
 import calendar
 
+
+def str_to_date(string, format = '%Y-%m-%d'):
+    return datetime.strptime(string, format).date()
 
 def add_semester(date: datetime):
     # Year is not important here as we only want to check Month!
@@ -10,3 +14,6 @@ def add_semester(date: datetime):
 
 def date_to_weekday(date: datetime):
     return calendar.day_name[date.weekday()]
+
+def movie_age(relaseDate: pd.Series, shownDate: pd.Series):
+    return (pd.to_datetime(shownDate) - pd.to_datetime(relaseDate))

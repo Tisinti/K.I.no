@@ -16,6 +16,11 @@ class Movie:
 
     def compare_ratings(self):
         tmdb_rating = self.get_TMDB_rating()
+        
+        # In Case the Search was not successfull
+        if tmdb_rating is None:
+            return tmdb_rating
+        
         #TMDB Rating should be over 0 and by more than 15 people
         if tmdb_rating > 0 and self.metadata['vote_count'] > 15:
             return tmdb_rating
@@ -29,7 +34,10 @@ class Movie:
 
     #returns the release date of the movie
     def get_release_date(self):
-        return datetime.strptime(self.metadata['release_date'], '%Y-%m-%d')
+        try:
+            return datetime.strptime(self.metadata['release_date'], '%Y-%m-%d')
+        except TypeError:
+            return None # In Case the Search was not successfull
     
     #returns the TMDB title 
     def get_TMBD_title(self):
@@ -41,6 +49,9 @@ class Movie:
     
     #convert the genre ids into readable strings
     def convert_genre_ids(self):
+        if self.title is None:
+            return # In Case the Search was not successfull
+        
         genres = []
         for id in self.get_genre_id():
             genres.append(id_to_genre(id))
@@ -49,6 +60,9 @@ class Movie:
     #returns formated letterboxd link of the best result
     #E.G. 'https://letterboxd.com/film/apocalypse-now'
     def get_letterboxd_link(self):
+        if self.title is None:
+            return # In Case the Search was not successfull
+        
         #put everything in lowercase
         name = self.title.lower()
         # remove dots etc.

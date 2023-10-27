@@ -18,7 +18,6 @@ genre_dic = {28: 'Action',
  10752: 'War',
  37: 'Western'}
 
+#Yeah i know this func is fucking useless but i didn't want that giant list in an already big file
 def id_to_genre(id):
-    for key, genre in genre_dic.items():
-        if key == id:
-            return genre
+    return genre_dic.get(id)

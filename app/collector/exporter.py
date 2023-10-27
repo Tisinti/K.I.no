@@ -24,7 +24,7 @@ def export_to_csv(folder, extension):
             content = extract_wanted(df, year)
             
             #export dataframe as .csv file 
-            content.to_csv(f"../../data/raw_test/{file_name}.csv", encoding='utf-8', index = False)
+            content.to_csv(f"../data/raw_test/{file_name}.csv", encoding='utf-8', index = False)
         
         except:
             print(f"{file_name} did not go through.")
