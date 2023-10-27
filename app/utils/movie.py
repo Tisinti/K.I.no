@@ -26,7 +26,7 @@ class Movie:
             return tmdb_rating
         
         ltb_rating = self.get_letterboxd_rating()
-        #LTB Rating should exist LULE
+        #LTB Rating should better exist LULE
         if ltb_rating != None:
             return ltb_rating
         else:
@@ -36,7 +36,7 @@ class Movie:
     def get_release_date(self):
         try:
             return datetime.strptime(self.metadata['release_date'], '%Y-%m-%d')
-        except TypeError:
+        except Exception:
             return None # In Case the Search was not successfull
     
     #returns the TMDB title 

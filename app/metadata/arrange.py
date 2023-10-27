@@ -1,6 +1,7 @@
 from app.utils import SearchMovie
 from .add_time import *
 import pandas as pd 
+import datetime as dt
 
 def movie_metadata(search):
     movie = SearchMovie(search).ml_match
@@ -21,7 +22,7 @@ def get_meta_df(rawDf: pd.DataFrame) -> pd.DataFrame:
 def append_time(rawDf: pd.DataFrame):
     timeDf = rawDf
 
-    timeDf['Date'] = timeDf['Date'].apply(str_to_date)
+    timeDf['Date'] = pd.to_datetime(timeDf['Date']).dt.date
     timeDf['Semester'] = timeDf['Date'].apply(add_semester)
     timeDf['Weekday'] = timeDf['Date'].apply(date_to_weekday)
     return timeDf
