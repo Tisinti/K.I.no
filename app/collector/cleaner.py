@@ -1,6 +1,5 @@
 import re
 from .formatDate import convert_date
-import pandas as pd 
 
 #remove unwanted characters from the title
 def clean_title(title):
@@ -12,7 +11,7 @@ def clean_title(title):
     return title
 
 def extract_wanted(df, year):
-    #convert_dates
+    #convert_dates because there sometimes are no years appended like 28.10.
     df['Datum'] = df.apply(lambda x: convert_date(year, x['Datum']), axis=1)
 
     #only use rows with dates

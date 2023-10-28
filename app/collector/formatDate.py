@@ -32,4 +32,4 @@ def convert_date(year, date):
     except: 
         #catched exception means that final date string could not be converted to date type
         #which implies that we want to ignore this later (could be info in date column that are no dates)
-        return float('NaN')
+        return None
