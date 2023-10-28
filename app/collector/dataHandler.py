@@ -11,6 +11,7 @@ def iterate_over_raws():
     full = pd.DataFrame()
 
     for csv in os.listdir(raw_dir):
+        # TODO: Add progressbar here
         print(csv)
         cleanDf = clean(pd.read_csv(f"{raw_dir}{csv}"))
         full = pd.concat([full, cleanDf], ignore_index=True)
