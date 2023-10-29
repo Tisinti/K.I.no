@@ -1,7 +1,7 @@
 from app.utils import SearchMovie
 from .add_time import *
 import pandas as pd 
-import datetime as dt
+
 
 def movie_metadata(search):
     movie = SearchMovie(search).ml_match
