@@ -83,7 +83,7 @@ def createWeekdayPlot():
     plt.ylabel('Attendance')
     plt.title("Mean average on a Weekday")
 
-    plt.savefig("data/plots/SemTypePlot.png")
+    plt.savefig("data/plots/WeekdayPlot.png")
     plt.clf()
 
 
