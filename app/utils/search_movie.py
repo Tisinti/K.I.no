@@ -36,7 +36,7 @@ class SearchMovie:
     def noResults(self):
         # If the search was not successfull turn everything Nonetype
         return [{'genre_ids': None, 'release_date': None, 'title': None, 
-                'vote_average': None, 'vote_count': None}]
+                'vote_average': None, 'vote_count': None, 'original_language' : None}]
 
     #formats a string like a query 
     def string_to_query(self):

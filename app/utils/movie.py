@@ -11,8 +11,12 @@ class Movie:
         self.title = self.get_TMBD_title()
         self.release_date = self.get_release_date()
         self.letterboxd_link = self.get_letterboxd_link()
+        self.language = self.get_lan()
         self.genre = self.convert_genre_ids()
         self.rating = self.compare_ratings()
+
+    def get_lan(self):
+        return self.metadata['original_language']
 
     def compare_ratings(self):
         tmdb_rating = self.get_TMDB_rating()

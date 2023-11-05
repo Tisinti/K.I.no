@@ -10,12 +10,13 @@ def movie_metadata(search):
     release_date = movie.release_date
     rating = movie.rating
     genre_ids = movie.genre
+    lan = movie.language
 
-    return title, release_date, rating, genre_ids
+    return title, release_date, rating, genre_ids, lan
 
 def get_meta_df(rawDf: pd.DataFrame) -> pd.DataFrame:
     meta = pd.DataFrame(list(rawDf['Titel'].apply(movie_metadata)))
-    meta.columns =['TMDB_Title', 'Release_Date', 'Rating', 'Genre_IDs']
+    meta.columns =['TMDB_Title', 'Release_Date', 'Rating', 'Genre_IDs', 'Original_Language']
 
     return meta
 
@@ -36,7 +37,7 @@ def append_meta(rawDf: pd.DataFrame) -> pd.DataFrame:
     time.rename(columns = {'Titel':'OG_Title'}, inplace = True)    
 
     orderd = time[['OG_Title','TMDB_Title', 'Release_Date', 'Rating', 'Genre_IDs', 
-               'MovieAge', 'Semester', 'Weekday', 'Date', 'Attendance']]
+               'Original_Language', 'MovieAge', 'Semester', 'Weekday', 'Date', 'Attendance']]
     return orderd
 
 def clean(rawDf: pd.DataFrame) -> pd.DataFrame:
