@@ -16,9 +16,8 @@ class SearchMovie:
     def __str__(self):
         return (f"Title: {self.ml_match.title}"
         f"\nGenre: {self.ml_match.genre}"
-        f"\nRelease-date: {self.ml_match.release_date.date()}"
-        f"\nRating: {self.ml_match.rating}"
-        f"\nLetterboxd Link: {self.ml_match.letterboxd_link}")
+        f"\nRelease-date: {self.ml_match.release_date}"
+        f"\nRating: {self.ml_match.rating}")
     
     #returns a list of dictionarys whith films that are possible results
     def find_movies(self):

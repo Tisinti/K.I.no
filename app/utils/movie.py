@@ -10,7 +10,6 @@ class Movie:
         self.metadata = metadata
         self.title = self.get_TMBD_title()
         self.release_date = self.get_release_date()
-        self.letterboxd_link = self.get_letterboxd_link()
         self.language = self.get_lan()
         self.genre = self.convert_genre_ids()
         self.rating = self.compare_ratings()
@@ -23,7 +22,7 @@ class Movie:
         
         # In Case the Search was not successfull
         if tmdb_rating is None:
-            return tmdb_rating
+            return None
         
         #TMDB Rating should be over 0 and by more than 15 people
         if tmdb_rating > 0 and self.metadata['vote_count'] > 15:
@@ -39,7 +38,7 @@ class Movie:
     #returns the release date of the movie
     def get_release_date(self):
         try:
-            return datetime.strptime(self.metadata['release_date'], '%Y-%m-%d')
+            return datetime.strptime(self.metadata['release_date'], '%Y-%m-%d').date()
         except Exception:
             return None # In Case the Search was not successfull
     

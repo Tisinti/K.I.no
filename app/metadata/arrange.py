@@ -40,9 +40,14 @@ def append_meta(rawDf: pd.DataFrame) -> pd.DataFrame:
                'Original_Language', 'MovieAge', 'Semester', 'Weekday', 'Date', 'Attendance']]
     return orderd
 
+def missing(cleanDf: pd.DataFrame) -> pd.DataFrame:
+    return  cleanDf[(cleanDf.isna().any(axis=1)) | (cleanDf['MovieAge'] <= pd.Timedelta(0))]
+
 def clean(rawDf: pd.DataFrame) -> pd.DataFrame:
-    cutDf = append_meta(rawDf)
-    cleanDf = cutDf.dropna(how='any')
+    cleanDf = rawDf
+
+    #Currently cleaning during iteration
+    cleanDf = cleanDf.dropna(how='any')
     # Throw out movies that have come out after being shown (wrong search result)
     cleanDf = cleanDf[cleanDf['MovieAge'] >= pd.Timedelta(0)]
 
