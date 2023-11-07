@@ -5,7 +5,10 @@ load_dotenv()
 
 
 def formatfullCSV():
-    cineData = pd.read_csv(os.getenv('FULL_CSV'), parse_dates=['Date'])
+    save = pd.read_csv(os.getenv("FULL_CSV"), parse_dates=['Date'])
+    missing = pd.read_csv(os.getenv("MISSING_CSV"), parse_dates=['Date'])
+
+    cineData = pd.concat([save, missing], axis=0, ignore_index=True)
     cineData['MovieAge'] = pd.to_timedelta(cineData['MovieAge'])
     cineData = cineData.drop(columns=["Unnamed: 0"])
     cineData['year'] = cineData['Semester'].str.split(" ").str[1]
@@ -20,6 +23,15 @@ def cutCovid():
     b_cov = cineData[cineData['Date'] < pd.to_datetime('2020-3-1')]
 
     return a_cov, b_cov
+
+def getSave():
+    save = pd.read_csv(os.getenv("FULL_CSV"), parse_dates=['Date'])
+
+    a_save = save[save['Date'] > pd.to_datetime('2020-3-1')]
+    #before covid
+    b_save = save[save['Date'] < pd.to_datetime('2020-3-1')]
+
+    return a_save, b_save
 
 def add_bar_label(ax, index, currPos):
     for i, ind in enumerate(index):

@@ -7,7 +7,7 @@ import pandas as pd
 raw_dir = 'data/raw/winter_0506.csv'
 
 def get_clean_meta():
-    return clean(append_meta(pd.read_csv(raw_dir)))
+    return append_meta(pd.read_csv(raw_dir))
 
 if __name__ == "__main__":
-    print(len(pd.read_csv("data/full/cineasta_missing.csv")))
+    createAllPlotsPipe()

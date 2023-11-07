@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 a_cov, b_cov = cutCovid()
+a_save, b_save = getSave()
 cineData = formatfullCSV()
 
 def createYearPlot():
@@ -29,8 +30,8 @@ def createYearPlot():
     plt.clf()
 
 def createRatingPlot():
-    rates_a = a_cov.groupby(['Rating'])['Attendance'].mean()
-    rates_b = b_cov.groupby(['Rating'])['Attendance'].mean()
+    rates_a = a_save.groupby(['Rating'])['Attendance'].mean()
+    rates_b = b_save.groupby(['Rating'])['Attendance'].mean()
 
     plt.scatter(rates_b.index, rates_b.values, color='orange')
     plt.scatter(rates_a.index, rates_a.values)
@@ -38,17 +39,19 @@ def createRatingPlot():
     plt.xlabel('Rating')
     plt.ylabel('Attendance')
     plt.title("Rating to Attendance")
+    plt.legend(['Before Covid', 'After Covid'], loc = 'upper left')
 
     plt.savefig("data/plots/RatingPlot.png")
     plt.clf()
 
 def createAgePlots(xlim: list):
-    plt.scatter(b_cov['MovieAge'] / pd.to_timedelta('365 days'), b_cov['Attendance'], color = 'orange')
-    plt.scatter(a_cov['MovieAge'] / pd.to_timedelta('365 days'), a_cov['Attendance'])
+    plt.scatter(b_save['MovieAge'] / pd.to_timedelta('365 days'), b_save['Attendance'], color = 'orange')
+    plt.scatter(a_save['MovieAge'] / pd.to_timedelta('365 days'), a_save['Attendance'])
     plt.xlabel('Movie Age')
     plt.xlim(xlim)
     plt.ylabel('Attendance')
     plt.title("Movie Age to Attendance")
+    plt.legend(['Before Covid', 'After Covid'])
 
     plt.savefig(f"data/plots/Age{xlim}.png")
     plt.clf()
