@@ -1,6 +1,5 @@
 import re
 import requests
-from .genre_helper import id_to_genre
 from bs4 import BeautifulSoup
 from datetime import datetime
 import os
