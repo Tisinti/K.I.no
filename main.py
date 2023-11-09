@@ -10,4 +10,4 @@ def get_clean_meta():
     return append_meta(pd.read_csv(raw_dir))
 
 if __name__ == "__main__":
-    createAllPlotsPipe()
+    export_whole_meta()

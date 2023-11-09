@@ -6,37 +6,40 @@ import os
 load_dotenv()
 
 class SearchMovie:
-    def __init__(self, search):
+    sn = requests.Session()
+
+    def __init__(self, search: str) -> None:
         self.search = search
         self.API_KEY = os.getenv('TMDB_API_KEY')
         self.results = self.find_movies()
         #most likely match (first result)
-        self.ml_match = Movie(self.results[0])
+        self.meta = Movie(self.results[0]['id'])
 
-    def __str__(self):
-        return (f"Title: {self.ml_match.title}"
-        f"\nGenre: {self.ml_match.genre}"
-        f"\nRelease-date: {self.ml_match.release_date}"
-        f"\nRating: {self.ml_match.rating}")
+    def __str__(self) -> None:
+        return (f"Title: {self.meta.title}"
+        f"\nGenre: {self.meta.genre}"
+        f"\nBudget: {self.meta.budget}"
+        f"\nRelease-date: {self.meta.release_date}"
+        f"\nRuntime: {self.meta.runtime}"
+        f"\nRating: {self.meta.rating}")
     
     #returns a list of dictionarys whith films that are possible results
-    def find_movies(self):
+    def find_movies(self) -> list[dict]:
         #search TMDB API over query
-        response = requests.get(
+        response = self.sn.get(
             f"https://api.themoviedb.org/3/search/movie?api_key={self.API_KEY}"
             f"&query={self.string_to_query()}")
         
         if not response.json()['results']:
-            return self.noResults()
+            return self.no_results()
 
         #only return the results as a list
         return response.json()['results']
     
-    def noResults(self):
+    def no_results(self) -> list[dict]:
         # If the search was not successfull turn everything Nonetype
-        return [{'genre_ids': None, 'release_date': None, 'title': None, 
-                'vote_average': None, 'vote_count': None, 'original_language' : None}]
+        return [{'id': 0}]
 
     #formats a string like a query 
-    def string_to_query(self):
+    def string_to_query(self) -> str:
         return self.search.replace(" ", "+")

@@ -3,22 +3,49 @@ import requests
 from .genre_helper import id_to_genre
 from bs4 import BeautifulSoup
 from datetime import datetime
+import os
 
 
 class Movie:
-    def __init__(self, metadata):
-        self.metadata = metadata
-        self.title = self.get_TMBD_title()
+    sn = requests.Session()
+
+    def __init__(self, id):
+        self.id = id
+        self.API_KEY = os.getenv('TMDB_API_KEY')
+
+        self.metadata = self.get_metadata()
+        self.title = self.get_title()
         self.release_date = self.get_release_date()
         self.language = self.get_lan()
-        self.genre = self.convert_genre_ids()
+        self.genre = self.get_genre_id()
         self.rating = self.compare_ratings()
+        self.budget = self.get_budget()
+        self.runtime = self.get_runtime()
+
+    def get_metadata(self):
+        response = self.sn.get(f"https://api.themoviedb.org/3/movie/{self.id}?api_key={self.API_KEY}")
+        if 'title' in response.json():
+            return response.json()
+        else:
+            return self.no_results()
+
+    def no_results(self) -> list[dict]:
+        # If the search was not successfull turn everything Nonetype
+        return {'genres': None, 'release_date': None, 'title': None, 
+                'vote_average': None, 'vote_count': None, 
+                'budget': None, 'original_language' : None, 'runtime': None}   
+    
+    def get_runtime(self):
+        return self.metadata['runtime']
 
     def get_lan(self):
         return self.metadata['original_language']
 
+    def get_budget(self):
+        return self.metadata['budget']
+
     def compare_ratings(self):
-        tmdb_rating = self.get_TMDB_rating()
+        tmdb_rating = self.metadata['vote_average']
         
         # In Case the Search was not successfull
         if tmdb_rating is None:
@@ -43,22 +70,18 @@ class Movie:
             return None # In Case the Search was not successfull
     
     #returns the TMDB title 
-    def get_TMBD_title(self):
+    def get_title(self):
         return self.metadata['title']
     
     #returns the genres IDS 
     def get_genre_id(self):
-        return self.metadata['genre_ids']
-    
-    #convert the genre ids into readable strings
-    def convert_genre_ids(self):
-        if self.title is None:
-            return # In Case the Search was not successfull
+        if not self.metadata['genres']:
+            return None
         
-        genres = []
-        for id in self.get_genre_id():
-            genres.append(id_to_genre(id))
-        return genres
+        all = []
+        for dic in self.metadata['genres']:
+            all.append(dic['name'])
+        return all
 
     #returns formated letterboxd link of the best result
     #E.G. 'https://letterboxd.com/film/apocalypse-now'
@@ -92,5 +115,4 @@ class Movie:
         except Exception as e:
             return None
     
-    def get_TMDB_rating(self):
-        return self.metadata['vote_average']
+    

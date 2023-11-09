@@ -4,19 +4,22 @@ import pandas as pd
 
 
 def movie_metadata(search):
-    movie = SearchMovie(search).ml_match
+    movie = SearchMovie(search).meta
     
     title = movie.title
     release_date = movie.release_date
     rating = movie.rating
     genre_ids = movie.genre
     lan = movie.language
+    budget = movie.budget
+    runtime = movie.runtime
 
-    return title, release_date, rating, genre_ids, lan
+    return title, release_date, rating, genre_ids, lan, budget, runtime
 
 def get_meta_df(rawDf: pd.DataFrame) -> pd.DataFrame:
     meta = pd.DataFrame(list(rawDf['Titel'].apply(movie_metadata)))
-    meta.columns =['TMDB_Title', 'Release_Date', 'Rating', 'Genre_IDs', 'Original_Language']
+    meta.columns =['TMDB_Title', 'Release_Date', 'Rating', 'Genre', 
+                   'Original_Language', 'Budget', 'Runtime']
 
     return meta
 
@@ -36,8 +39,9 @@ def append_meta(rawDf: pd.DataFrame) -> pd.DataFrame:
 
     time.rename(columns = {'Titel':'OG_Title'}, inplace = True)    
 
-    orderd = time[['OG_Title','TMDB_Title', 'Release_Date', 'Rating', 'Genre_IDs', 
-               'Original_Language', 'MovieAge', 'Semester', 'Weekday', 'Date', 'Attendance']]
+    orderd = time[['OG_Title','TMDB_Title', 'Release_Date', 'Rating', 'Genre', 
+                'Budget', 'Runtime', 'Original_Language', 'MovieAge', 'Semester', 'Weekday', 
+                'Date', 'Attendance']]
     return orderd
 
 def missing(cleanDf: pd.DataFrame) -> pd.DataFrame:
