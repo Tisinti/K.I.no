@@ -89,6 +89,37 @@ def createWeekdayPlot():
     plt.savefig("data/plots/WeekdayPlot.png")
     plt.clf()
 
+def createGenrePlot():
+    genre_a, genre_b = a_save, b_save
+    
+    genre_a['Genre'] = genre_a['Genre'].apply(lambda x: x[1:-1].replace(' ', '').split(','))
+    genre_b['Genre'] = genre_b['Genre'].apply(lambda x: x[1:-1].replace(' ', '').split(','))
+
+    g_a = genre_a.explode('Genre').groupby(['Genre'])['Attendance'].mean().sort_values()
+    g_b = genre_b.explode('Genre').groupby(['Genre'])['Attendance'].mean().sort_values()
+
+    g_b.index = g_b.index.str.replace("'", "")
+    g_a.index = g_a.index.str.replace("'", "")
+
+    ax = plt.gca()
+
+    plt.bar(g_b.index, g_b.values, color = 'orange')
+    currPos = add_bar_label(ax, g_b.index, 0)
+
+    plt.bar(g_a.index, g_a.values, color = 'blue')
+    add_bar_label(ax, g_a.index, currPos)
+
+    ax.axes.xaxis.set_ticklabels([])
+    plt.tick_params(bottom = False)
+
+    plt.xlabel('Genre')
+    plt.ylabel('Attendance')
+    plt.legend(['Before Covid', 'After Covid'])
+    plt.title("Mean Attendance to Genre")
+
+    plt.savefig("data/plots/GenrePlot.png")
+    plt.clf()
+
 
 def createAllPlotsPipe():
     createYearPlot()
@@ -97,3 +128,4 @@ def createAllPlotsPipe():
     createAgePlots([5, 50])
     createTypePlot()
     createRatingPlot()
+    createGenrePlot()
