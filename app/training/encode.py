@@ -28,7 +28,6 @@ def prettify_df(raw: pd.DataFrame) -> pd.DataFrame:
     pretty = raw.reset_index(drop=True)
     pretty = drop_names(pretty)
     pretty = explode_release(pretty)
-    pretty = explode_genre(pretty)
     pretty = convert_delta(pretty)
     pretty = explode_showndate(pretty)
     return pretty.reset_index(drop=True)
