@@ -16,6 +16,8 @@ def eval_linreg():
     run_eval(after_covid, linreg, enc)
 
 if __name__ == "__main__":
+    train_linreg()
+
     search = "Mona Lisa and the Blood Moon"
     date = "21.11.2023"
     model = get_lin_reg()

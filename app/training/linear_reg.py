@@ -21,10 +21,10 @@ def training(X_train, y_train):
     return model
 
 def save_model(model):
-    dump(model, 'data/models/lin_reg_proto.joblib')
+    dump(model, 'models/model/lin_reg_proto.joblib')
 
 def save_encoder(enc):
-    dump(enc, 'data/encoder/lin_reg_enc.joblib')
+    dump(enc, 'models/encoder/lin_reg_enc.joblib')
 
 
 def run_training(df: pd.DataFrame) -> None:
@@ -38,7 +38,7 @@ def run_training(df: pd.DataFrame) -> None:
     save_encoder(enc)
 
 def get_lin_reg():
-    return load('data/models/lin_reg_proto.joblib')
+    return load('models/model/lin_reg_proto.joblib')
 
 def get_encoder():
-    return load('data/encoder/lin_reg_enc.joblib')
+    return load('models/encoder/lin_reg_enc.joblib')
