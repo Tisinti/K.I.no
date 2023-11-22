@@ -1,13 +1,24 @@
-from app.preprocessor import export_whole_meta, get_total_loss
-from app.metadata import clean, missing, append_meta
-from app.analysis import createAllPlotsPipe
-from app.utils import SearchMovie
-import pandas as pd 
+from app.training import run_training, run_eval
+from app.training import get_after_covid
+from app.training import get_lin_reg, get_encoder
+from app.training import predict_attendance
 
-raw_dir = 'data/raw/winter_0506.csv'
 
-def get_clean_meta():
-    return append_meta(pd.read_csv(raw_dir))
+after_covid = get_after_covid()
+
+
+def train_linreg():
+    run_training(after_covid)
+
+def eval_linreg():
+    linreg = get_lin_reg()
+    enc = get_encoder()
+    run_eval(after_covid, linreg, enc)
 
 if __name__ == "__main__":
-    createAllPlotsPipe()
+    search = "Mona Lisa and the Blood Moon"
+    date = "21.11.2023"
+    model = get_lin_reg()
+    enc = get_encoder()
+    
+    print(predict_attendance(search, date, model, enc))

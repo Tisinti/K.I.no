@@ -1,4 +1,4 @@
-from app.utils import SearchMovie
+from app.search import SearchMovie
 from .add_time import *
 import pandas as pd 
 
