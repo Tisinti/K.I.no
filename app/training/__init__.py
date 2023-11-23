@@ -1,6 +1,6 @@
 from .encode import preprocess
 from .encode import explode_genre
 from .encode import get_full, get_after_covid
-from .linear_reg import run_training, target_prep, split, get_lin_reg, get_encoder
-from .eval import run_eval
+from .train import run_training, split, get_lin_reg, get_encoder, x_y_split
 from .predict import predict_attendance
+from .eval import run_cross_val, run_eval
