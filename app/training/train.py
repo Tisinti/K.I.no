@@ -12,30 +12,27 @@ def split(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
 def x_y_split(df: pd.DataFrame):
     return df.drop('Attendance', axis=1), df['Attendance']
 
-def training(X_train, y_train):
-    model = LinearRegression()
-    model.fit(X_train, y_train) 
-    return model
-
 def save_model(model):
-    dump(model, 'models/model/lin_reg_proto.joblib')
+    dump(model, f'models/model/{type(model).__name__}.joblib')
 
 def save_encoder(enc):
-    dump(enc, 'models/encoder/lin_reg_enc.joblib')
+    dump(enc, 'models/encoder/ord_enc.joblib')
 
 
-def run_training(df: pd.DataFrame) -> None:
+def run_training(df: pd.DataFrame, model) -> None:
     enc = OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1)
 
     train = split(df)[0]
     train = preprocess(train, fit=True, enc=enc)
     X_train, y_train = x_y_split(train)
-    lin_reg = training(X_train, y_train)
-    save_model(lin_reg)
+
+    fitted_model = model.fit(X_train, y_train)
+
+    save_model(fitted_model)
     save_encoder(enc)
 
-def get_lin_reg():
-    return load('models/model/lin_reg_proto.joblib')
+def get_model(model):
+    return load(f'models/model/{type(model).__name__}.joblib')
 
 def get_encoder():
-    return load('models/encoder/lin_reg_enc.joblib')
+    return load('models/encoder/ord_enc.joblib')
