@@ -14,11 +14,10 @@ def get_mae(model, X_test, y_test):
     predictions = model.predict(X_test) 
     return mean_absolute_error(y_test, predictions)
 
-def run_cross_val(df: DataFrame) -> list[float]:
+def run_cross_val(df: DataFrame, model) -> list[float]:
     """ I HATE THIS """
     n = 5
     skf = StratifiedKFold(n_splits=n, shuffle=True, random_state=42)
-    model = LinearRegression()
     X, y = x_y_split(df)
     score = np.empty(n, dtype=float)
     
@@ -34,7 +33,7 @@ def run_cross_val(df: DataFrame) -> list[float]:
         model.fit(X_train, y_train)
         score[i] = get_mae(model, X_test, y_test)
     
-    return score.mean()
+    return score
 
 def run_eval(df, model, enc):
     test = split(df)[1]

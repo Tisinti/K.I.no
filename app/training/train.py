@@ -1,5 +1,4 @@
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression 
 from sklearn.preprocessing import OrdinalEncoder
 from app.training import preprocess
 from joblib import dump, load
@@ -17,7 +16,6 @@ def save_model(model):
 
 def save_encoder(enc):
     dump(enc, 'models/encoder/ord_enc.joblib')
-
 
 def run_training(df: pd.DataFrame, model) -> None:
     enc = OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1)
