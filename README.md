@@ -1,4 +1,4 @@
-# Movie Attendance Prediction 🎥
+# K.I.no 🎥
 
 ### So what is this about?
 Choosing the right movies to show is not always easy, especially while trying to keep a good balance in the programm. Should you settle for Arthouse Movie 'X' or 'Y'? While deciding this, you should probably have the attendance in mind. Not as the main factor of course, but what good is it to screen the best Underground Movie ever if nobody shows up?
