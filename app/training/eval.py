@@ -39,6 +39,6 @@ def run_eval(df, model, enc, scaler):
     test = split(df)[1]
     test = preprocess(test, fit=False, enc=enc, scaler=scaler)
     X_test, y_test = x_y_split(test)
-    print(get_mae(model, X_test, y_test))
-    print(get_mse(model, X_test, y_test))
+    print(f'MAE: {get_mae(model, X_test, y_test)}')
+    print(f'MSE: {get_mse(model, X_test, y_test)}')
     
