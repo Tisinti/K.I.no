@@ -24,6 +24,22 @@ gb = GradientBoostingRegressor()
 br = BayesianRidge()
 
 
+svr_param = {
+    "kernel": ['poly', 'rbf', 'sigmoid'],
+    "degree": [1, 2, 3],
+    "gamma": ['scale'],
+    "coef0": [-0.5, 0, 0.5],
+    "C": [0.3, 0.5, 1]
+    }
+rf_param = {
+    "min_samples_leaf": [0.75, 1],
+    "max_features":["log2","sqrt"],
+    "criterion": ['friedman_mse', 'squared_error', 'absolute_error', 'poisson'],
+    }
+
+clf = GridSearchCV(svr, param_grid=svr_param, cv = 5, n_jobs= -1,
+                   scoring="neg_mean_absolute_error", verbose=2)
+
 def train(model):
     run_training(after_covid, model)
 
@@ -44,12 +60,15 @@ def predict(model):
     print(f"\nPREDICTION FOR MOVIE: {search}")
     print(predict_attendance(search, date, sel_model, encoder, max_scaler), "\n")
 
-if __name__ == "__main__":
-   for model in [rf,lr,svr,lasso,ridge,gb,br]:
+def iterate_models():
+    for model in [rf,lr,svr,lasso,ridge,gb,br]:
        print("----------------------------------------")
        print(f"CURRENT MODEL: {type(model).__name__} \n")
        print("EVALUATION:")
        eval(model)
        predict(model)
+       
+if __name__ == "__main__":
+    iterate_models()
        
    
