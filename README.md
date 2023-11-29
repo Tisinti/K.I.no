@@ -26,7 +26,5 @@ They provided the data i will use to train the model! The model will also only w
 
 https://www.asta-trier.de/cineasta/
 
-### Any help is appreciated!
-
 
 
