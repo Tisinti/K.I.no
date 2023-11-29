@@ -35,9 +35,9 @@ def run_cross_val(df: DataFrame, model) -> list[float]:
     
     return score
 
-def run_eval(df, model, enc):
+def run_eval(df, model, enc, scaler):
     test = split(df)[1]
-    test = preprocess(test, fit=False, enc=enc)
+    test = preprocess(test, fit=False, enc=enc, scaler=scaler)
     X_test, y_test = x_y_split(test)
     print(get_mae(model, X_test, y_test))
     print(get_mse(model, X_test, y_test))
