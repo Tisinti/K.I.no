@@ -1,0 +1,20 @@
+:root {
+    --text-color-light: #f9f9f9; /* light text color */
+    --text-color-dark: #333; /* dark text color */
+    --background-color-container: rgba(0, 0, 0, 0.3); /* transparent container */
+    --background-start-color: #52796f; /* light background color */
+    --background-end-color: #2f3e46; /* dark background color */
+    --box-shadow-color: rgba(0, 0, 0, 0.2); /* shadow */
+    --border-color: #2f3e46; /* border color */
+    --highlight-color: #a3b18a; /* highlight color */
+    --black: #000; /* black (highlight text color) */
+
+    --suggestion-background-color: #f9f9f9; /* suggestion background color */
+    --suggestion-text-color: #2f3e46; /* suggestion text color */
+    --suggestion-hover-color: rgba(0, 0, 0, 0.3); /* suggestion hover color */
+
+    --overlay-background: rgba(0, 0, 0, 0.8); /* info overlay background color */
+    --text-color: #f9f9f9; /* info overlay text color */
+    --loader-background: #333; /* loading bar background color */
+    --progress-color: #f9f9f9; /* loading bar progress color */
+} 

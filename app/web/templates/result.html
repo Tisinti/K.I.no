@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>K.I.no</title>
+        <link rel="stylesheet" type="text/css" href=" {{ url_for('static', filename='stylesheets/styles.css') }} ">
+        <link rel="stylesheet" type="text/css" href=" {{ url_for('static', filename='stylesheets/colors.css') }} ">
+    </head>
+    <body>
+        <header>
+            <h1 class="header-title">K.I.no</h1>
+
+            <a href="https://github.com/Tisinti/K.I.no" target="_blank" class="github-link">
+                <img src=" {{ url_for('static', filename='images/github.png') }} " alt="GitHub Logo" class="github-logo">
+            </a>
+        </header>
+        <h1 class="result">{{data.res}}</h1>
+        <h4 class="quip">{{data.quip}}</h4>
+    </body>
+</html>

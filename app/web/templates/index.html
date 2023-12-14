@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>K.I.no</title>
+        <link rel="stylesheet" type="text/css" href=" {{ url_for('static', filename='stylesheets/styles.css') }} ">
+        <link rel="stylesheet" type="text/css" href=" {{ url_for('static', filename='stylesheets/colors.css') }} ">
+        <link rel="stylesheet" type="text/css" href=" {{ url_for('static', filename='stylesheets/calendar.css') }} ">
+    </head>
+    <body>
+
+        <div class="overlay" id="overlay">
+            <div class="loader">
+                <h1 id="loadingText">Loading K.I.no</h1>
+                <div class="progress-bar">
+                    <div class="progress" id="progressBar"></div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <h1 class="header-title">K.I.no</h1>
+
+            <a href="https://github.com/Tisinti/K.I.no" target="_blank" class="github-link">
+                <img src=" {{ url_for('static', filename='images/github.png') }} " alt="GitHub Logo" class="github-logo">
+            </a>
+        </header>
+
+        <div>
+            <form action="{{ url_for('result') }}" method="post" class="input">
+                <div class="input-group">
+                    <input name = "title" type="text" id="filmInput" list="suggestions" placeholder="Insert Movie.....">
+                    <ul id="suggestions" class="suggestions"></ul>
+                    <input name = "date" type="text" id="dateInput" placeholder="Datum: DD.MM.YYYY ...">
+                    <input type="submit" placeholder="SUBMIT">
+                </div>   
+            </form>         
+            
+            <div class="outputArea" id="outputArea" style="display: none;">Expected visitors:</div>
+        </div>
+
+        <div class="about">
+            <h1>K.I.no 🎥</h1>
+            <h2>So what is this about?</h2>
+            <p>Long story short, this is a project I'm doing just for fun, trying to predict the audience turnout for our campus cinema!</p>
+        
+            <h2>But why?</h2>
+            <p>To be honest, this project and subsequently this repository are more for learning purposes than anything else. Best case, this project will end with a model that can reliably predict the attendance of a movie. Worst case, I learned something. I'm hoping for something in between lol.</p>
+        
+            <h2>How will it work?</h2>
+            <p>I'm not set on a special Machine Learning Algorithm yet, but there are definitely some I want to try out!</p>
+            <ul>
+                <li>Linear Regression</li>
+                <li>Multiple Regression</li>
+                <li>Support Vector Machine</li>
+                <li>Some kind of Pipeline (Random Forest +...+ etc.)</li>
+                <li>Gradient Boosting</li>
+                <li>XGBoost</li>
+                <li>Some kind of Neural Network (?)</li>
+            </ul>
+            <p>At the end, I will probably settle for some kind of Pipeline, but who knows.</p>
+        
+            <p>Big shoutout to the <a href="https://www.asta-trier.de/cineasta/" target="_blank" rel="noopener noreferrer">Cine-Asta Trier</a> ! They provided the data I will use to train the model! The model will also only work for the cinema who provided the data, which in this case is them ✨</p>
+        </div>        
+          
+        <footer>
+        </footer>
+
+    </body>
+    <script type="text/javascript">
+        var key = {{data.key|tojson}}
+    </script>
+    <script src=" {{ url_for('static', filename='javascripts/functions.js') }} " ></script>
+    <script src=" {{ url_for('static', filename='javascripts/calendar.js') }} "></script>
+    <script src=" {{ url_for('static', filename='javascripts/tmdb-connection.js') }} "></script>
+</html>
