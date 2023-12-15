@@ -34,6 +34,8 @@ def result():
     return render_template('result.html', data=data)
 
 def quip(res: int) -> str:
+    if type(res) == str:
+        return "Der Film hat scheinbar keine Bewertungen oder existiert nicht auf Letterboxd"
     if res < 3:
         return "Immer noch mehr als gestern 😓"
     if res >= 3 and res <= 10:

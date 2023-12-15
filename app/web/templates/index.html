@@ -9,7 +9,6 @@
         <link rel="stylesheet" type="text/css" href=" {{ url_for('static', filename='stylesheets/calendar.css') }} ">
     </head>
     <body>
-
         <div class="overlay" id="overlay">
             <div class="loader">
                 <h1 id="loadingText">Loading K.I.no</h1>
@@ -19,7 +18,7 @@
             </div>
         </div>
         <header>
-            <h1 class="header-title">K.I.no</h1>
+            <img src=" {{ url_for('static', filename='images/kinologo.png') }} " class="logo">
 
             <a href="https://github.com/Tisinti/K.I.no" target="_blank" class="github-link">
                 <img src=" {{ url_for('static', filename='images/github.png') }} " alt="GitHub Logo" class="github-logo">
@@ -32,35 +31,16 @@
                     <input name = "title" type="text" id="filmInput" list="suggestions" placeholder="Insert Movie.....">
                     <ul id="suggestions" class="suggestions"></ul>
                     <input name = "date" type="text" id="dateInput" placeholder="Datum: DD.MM.YYYY ...">
-                    <input type="submit" placeholder="SUBMIT">
+                    <input type="submit" value="Submit">
                 </div>   
             </form>         
-            
-            <div class="outputArea" id="outputArea" style="display: none;">Expected visitors:</div>
         </div>
 
         <div class="about">
-            <h1>K.I.no 🎥</h1>
-            <h2>So what is this about?</h2>
-            <p>Long story short, this is a project I'm doing just for fun, trying to predict the audience turnout for our campus cinema!</p>
+            <h1>Gib einen Film und ein Datum ein, um eine Vorhersage zu erhalten wie viele Zuschauer ins Uni-Kino kommen könnten!</h1>
+            <h4>Ergebnisse sind noch nicht perfekt und werden es wahrscheinlich auch nie sein, aber geben meistens eine ganz gute Tendenz</h4>
         
-            <h2>But why?</h2>
-            <p>To be honest, this project and subsequently this repository are more for learning purposes than anything else. Best case, this project will end with a model that can reliably predict the attendance of a movie. Worst case, I learned something. I'm hoping for something in between lol.</p>
-        
-            <h2>How will it work?</h2>
-            <p>I'm not set on a special Machine Learning Algorithm yet, but there are definitely some I want to try out!</p>
-            <ul>
-                <li>Linear Regression</li>
-                <li>Multiple Regression</li>
-                <li>Support Vector Machine</li>
-                <li>Some kind of Pipeline (Random Forest +...+ etc.)</li>
-                <li>Gradient Boosting</li>
-                <li>XGBoost</li>
-                <li>Some kind of Neural Network (?)</li>
-            </ul>
-            <p>At the end, I will probably settle for some kind of Pipeline, but who knows.</p>
-        
-            <p>Big shoutout to the <a href="https://www.asta-trier.de/cineasta/" target="_blank" rel="noopener noreferrer">Cine-Asta Trier</a> ! They provided the data I will use to train the model! The model will also only work for the cinema who provided the data, which in this case is them ✨</p>
+            <p><a href="https://www.asta-trier.de/cineasta/" rel="noopener noreferrer">https://www.asta-trier.de/cineasta/</a> ✨</p>
         </div>        
           
         <footer>
