@@ -5,8 +5,8 @@ from tqdm import tqdm
 
 def export_whole_meta():
     full, missing = iterate_over_raws()
-    full.to_csv("data/test/cineasta_full.csv")
-    missing.to_csv("data/test/cineasta_missing.csv")
+    full.to_csv("data/full/cineasta_full.csv")
+    missing.to_csv("data/full/cineasta_missing.csv")
     return
 
 def iterate_over_raws():

@@ -56,7 +56,7 @@ class Movie:
         
         ltb_rating = self.get_letterboxd_rating()
         #LTB Rating should better exist LULE
-        if ltb_rating != None:
+        if ltb_rating is not None:
             return ltb_rating
         else:
             return None
@@ -111,7 +111,7 @@ class Movie:
             rating = re.search('\S+', results['content']).group()
             return float(rating) * 2
         # In case the movie does not have a rating on Letterboxd
-        except Exception as e:
+        except Exception:
             return None
     
     

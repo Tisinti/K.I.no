@@ -1,5 +1,5 @@
 from app.search import SearchMovie
-from .add_time import *
+from .add_time import add_semester, date_to_weekday, movie_age
 import pandas as pd 
 
 
@@ -39,6 +39,7 @@ def append_meta(rawDf: pd.DataFrame) -> pd.DataFrame:
 
     time.rename(columns = {'Titel':'OG_Title'}, inplace = True)    
 
+    # orderd Okayeg
     orderd = time[['OG_Title','TMDB_Title', 'Release_Date', 'Rating', 'Genre', 
                 'Budget', 'Runtime', 'Original_Language', 'MovieAge', 'Semester', 'Weekday', 
                 'Date', 'Attendance']]
@@ -54,5 +55,7 @@ def clean(rawDf: pd.DataFrame) -> pd.DataFrame:
     cleanDf = cleanDf.dropna(how='any')
     # Throw out movies that have come out after being shown (wrong search result)
     cleanDf = cleanDf[cleanDf['MovieAge'] >= pd.Timedelta(0)]
+    # Throw out Sneaks
+    cleanDf = cleanDf[~cleanDf['OG_Title'].str.contains("sneak", case=False)]
 
     return cleanDf

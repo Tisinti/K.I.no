@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime as dt
 #convert dates that are Str into date type
 #if the date is a String it is formated as "24.12." 
 #year gets extracted from filename: 2 possible types XX or XXYY
@@ -9,11 +9,11 @@ def convert_date(year, date):
 
     try:
         #is date a string and year of type XX?
-        if (type(date) == str) and (len(year) == 2):
+        if (isinstance(date, str)) and (len(year) == 2):
             date = date + year
 
         #is date a string and year of type XXYY?
-        elif (type(date) == str) and (len(year) > 2): 
+        elif (isinstance(date, str)) and (len(year) > 2): 
             #XXYY (len = 4) implies that it's a wintersemester (starts 01.10, ends 01.04)
             #if month is bigger than 6 choose XX
             if int(date[3:-1]) > 6:
@@ -27,9 +27,9 @@ def convert_date(year, date):
             return date 
         
         #turn the formated date string into date type and return
-        return datetime.strptime(date, format)
+        return dt.strptime(date, format)
     
-    except: 
+    except Exception: 
         #catched exception means that final date string could not be converted to date type
-        #which implies that we want to ignore this later (could be info in date column that are no dates)
+        #which implies that we want to ignore this 
         return None

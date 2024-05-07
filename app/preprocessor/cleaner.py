@@ -18,7 +18,10 @@ def extract_wanted(df, year):
     df = df.dropna(subset= 'Datum')
     
     #only keep date, name, attendance
-    df = df[["Datum", "Titel", "Zuschauer"]]
+    try:
+        df = df[["Datum", "Titel", "Zuschauer"]]
+    except Exception:
+        df = df[["Datum", "Titel", "Besucher"]]
     
     #New Column Names
     df.columns = ['Date', "Titel", "Attendance"]
