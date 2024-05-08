@@ -1,0 +1,28 @@
+[project]
+name = "k-i-no"
+version = "0.5"
+description = "Add your description here"
+dependencies = [
+    "matplotlib>=3.8.4",
+    "pandas>=2.2.2",
+    "xlrd>=2.0.1",
+    "python-dotenv>=1.0.1",
+    "tqdm>=4.66.4",
+    "scikit-learn>=1.4.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/k_i_no"]
