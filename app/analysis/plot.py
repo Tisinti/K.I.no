@@ -7,6 +7,29 @@ a_save, b_save = getSave()
 cineData = formatfullCSV()
 
 def createYearPlot():
+    semDiff_a = a_cov.groupby(['year']).Attendance.mean().sort_index()
+    semDiff_b = b_cov.groupby(['year']).Attendance.mean().sort_index()
+
+    ax = plt.gca()
+
+    plt.bar(semDiff_b.index, semDiff_b.values, color = 'orange')
+    currPos = add_bar_label(ax, semDiff_b.index, 0)
+
+    plt.bar(semDiff_a.index, semDiff_a.values, color = 'blue')
+    add_bar_label(ax, semDiff_a.index, currPos)
+
+    ax.axes.xaxis.set_ticklabels([])
+    plt.tick_params(bottom = False)
+
+    plt.xlabel('Semester')
+    plt.ylabel('Besucherzahl')
+    plt.legend(['Before Covid', 'After Covid'])
+    plt.title("Durchschnittliche Besucherzahlen pro Semester")
+    
+    plt.savefig("data/plots/SemesterPlotMean.png", dpi = 250)
+    plt.clf()
+
+def createYearPlotMedian():
     semDiff_a = a_cov.groupby(['year']).Attendance.median().sort_index()
     semDiff_b = b_cov.groupby(['year']).Attendance.median().sort_index()
 
@@ -22,11 +45,29 @@ def createYearPlot():
     plt.tick_params(bottom = False)
 
     plt.xlabel('Semester')
-    plt.ylabel('Attendance')
+    plt.ylabel('Besucherzahl')
     plt.legend(['Before Covid', 'After Covid'])
-    plt.title("Median of Attendance")
+    plt.title("Median der Besucherzahlen pro Semester")
+    
+    plt.savefig("data/plots/SemesterPlotMedian.png", dpi = 250)
+    plt.clf()
 
-    plt.savefig("data/plots/SemesterpPlot.png")
+def createSemesterVariancePlot():
+    semDiff_a = a_cov.groupby(['year']).Attendance.var().sort_index()
+    semDiff_b = b_cov.groupby(['year']).Attendance.var().sort_index()
+
+    plt.bar(semDiff_b.index, semDiff_b.values, color = 'orange')
+    plt.bar(semDiff_a.index, semDiff_a.values, color = 'blue')
+
+    plt.xticks(rotation=90)
+    plt.tick_params(bottom = False)
+
+    plt.xlabel('Semester')
+    plt.ylabel('Varianz')
+    plt.legend(['Before Covid', 'After Covid'])
+    plt.title("Varianz der Besucherzahl pro Semester")
+    
+    plt.savefig("data/plots/SemesterPlotVariance.png", dpi = 250, bbox_inches = "tight")
     plt.clf()
 
 def createRatingPlot():
@@ -37,23 +78,23 @@ def createRatingPlot():
     plt.scatter(rates_a.index, rates_a.values)
    
     plt.xlabel('Rating')
-    plt.ylabel('Attendance')
-    plt.title("Rating to Attendance")
+    plt.ylabel('Besucherzahl')
+    plt.title("Rating (0-10) zu Besucherzahl")
     plt.legend(['Before Covid', 'After Covid'], loc = 'upper left')
 
-    plt.savefig("data/plots/RatingPlot.png")
+    plt.savefig("data/plots/RatingPlot.png", dpi = 250)
     plt.clf()
 
 def createAgePlots(xlim: list):
     plt.scatter(b_save['MovieAge'] / pd.to_timedelta('365 days'), b_save['Attendance'], color = 'orange')
     plt.scatter(a_save['MovieAge'] / pd.to_timedelta('365 days'), a_save['Attendance'])
-    plt.xlabel('Movie Age')
+    plt.xlabel('Filmalter')
     plt.xlim(xlim)
-    plt.ylabel('Attendance')
-    plt.title("Movie Age to Attendance")
+    plt.ylabel('Besucherzahl')
+    plt.title("Filmalter zu Besucherzahl")
     plt.legend(['Before Covid', 'After Covid'])
 
-    plt.savefig(f"data/plots/Age{xlim}.png")
+    plt.savefig(f"data/plots/Age{xlim}.png", dpi = 250)
     plt.clf()
 
 
@@ -67,10 +108,10 @@ def createTypePlot():
     plt.legend(['Before Covid', 'After Covid'])
 
     plt.xlabel('Semestertype')
-    plt.ylabel('Attendance')
-    plt.title("Mean of each Semestertype")
+    plt.ylabel('Besucherzahl')
+    plt.title("Durchschnittliche Besucherzahl pro Semestertyp")
 
-    plt.savefig("data/plots/SemTypePlot.png")
+    plt.savefig("data/plots/SemTypePlot.png", dpi = 250)
     plt.clf()
 
 def createWeekdayPlot():
@@ -82,15 +123,17 @@ def createWeekdayPlot():
 
     plt.legend(['Before Covid', 'After Covid'])
 
-    plt.xlabel('Weekday')
-    plt.ylabel('Attendance')
-    plt.title("Mean average on a Weekday")
+    plt.xlabel('Wochentag')
+    plt.ylabel('Besucherzahl')
+    plt.title("Durchschnittliche Besucherzahl pro Wochentag")
 
-    plt.savefig("data/plots/WeekdayPlot.png")
+    plt.savefig("data/plots/WeekdayPlot.png", dpi = 250)
     plt.clf()
 
 def createGenrePlot():
-    genre_a, genre_b = a_save, b_save
+    genre_a, genre_b = a_cov.dropna(subset=['Genre']), b_cov.dropna(subset=['Genre'])
+    genre_a = genre_a[genre_a['MovieAge'] > pd.Timedelta(days=0)]
+    genre_b = genre_b[genre_b['MovieAge'] > pd.Timedelta(days=0)]
     
     genre_a['Genre'] = genre_a['Genre'].apply(lambda x: x[1:-1].replace(' ', '').split(','))
     genre_b['Genre'] = genre_b['Genre'].apply(lambda x: x[1:-1].replace(' ', '').split(','))
@@ -113,16 +156,18 @@ def createGenrePlot():
     plt.tick_params(bottom = False)
 
     plt.xlabel('Genre')
-    plt.ylabel('Attendance')
+    plt.ylabel('Besucherzahl')
     plt.legend(['Before Covid', 'After Covid'])
-    plt.title("Mean Attendance to Genre")
+    plt.title("Durchschnittliche Besucherzahl pro Genre")
 
-    plt.savefig("data/plots/GenrePlot.png")
+    plt.savefig("data/plots/GenrePlot.png", dpi = 250)
     plt.clf()
 
 
 def createAllPlotsPipe():
     createYearPlot()
+    createYearPlotMedian()
+    createSemesterVariancePlot()
     createWeekdayPlot()
     createAgePlots([0,5])
     createAgePlots([5, 50])

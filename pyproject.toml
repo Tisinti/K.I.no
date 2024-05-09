@@ -1,7 +1,7 @@
 [project]
 name = "k-i-no"
 version = "0.5"
-description = "Add your description here"
+description = "Having fun with movie data!"
 dependencies = [
     "matplotlib>=3.8.4",
     "pandas>=2.2.2",
@@ -9,6 +9,10 @@ dependencies = [
     "python-dotenv>=1.0.1",
     "tqdm>=4.66.4",
     "scikit-learn>=1.4.2",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.3",
+    "odfpy>=1.4.1",
+    "openpyxl>=3.1.2",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -25,4 +29,4 @@ dev-dependencies = []
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/k_i_no"]
+packages = ["app"]

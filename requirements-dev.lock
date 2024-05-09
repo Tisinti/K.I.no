@@ -8,12 +8,24 @@
 #   with-sources: false
 
 -e file:.
+beautifulsoup4==4.12.3
+    # via k-i-no
+certifi==2024.2.2
+    # via requests
+charset-normalizer==3.3.2
+    # via requests
 contourpy==1.2.1
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
+defusedxml==0.7.1
+    # via odfpy
+et-xmlfile==1.1.0
+    # via openpyxl
 fonttools==4.51.0
     # via matplotlib
+idna==3.7
+    # via requests
 joblib==1.4.2
     # via scikit-learn
 kiwisolver==1.4.5
@@ -26,6 +38,10 @@ numpy==1.26.4
     # via pandas
     # via scikit-learn
     # via scipy
+odfpy==1.4.1
+    # via k-i-no
+openpyxl==3.1.2
+    # via k-i-no
 packaging==24.0
     # via matplotlib
 pandas==2.2.2
@@ -41,17 +57,23 @@ python-dotenv==1.0.1
     # via k-i-no
 pytz==2024.1
     # via pandas
+requests==2.31.0
+    # via k-i-no
 scikit-learn==1.4.2
     # via k-i-no
 scipy==1.13.0
     # via scikit-learn
 six==1.16.0
     # via python-dateutil
+soupsieve==2.5
+    # via beautifulsoup4
 threadpoolctl==3.5.0
     # via scikit-learn
 tqdm==4.66.4
     # via k-i-no
 tzdata==2024.1
     # via pandas
+urllib3==2.2.1
+    # via requests
 xlrd==2.0.1
     # via k-i-no

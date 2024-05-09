@@ -1,227 +1,201 @@
 ,OG_Title,TMDB_Title,Release_Date,Rating,Genre,Budget,Runtime,Original_Language,MovieAge,Semester,Weekday,Date,Attendance
-0,Die Rotkäppchen-Verschwörung,Hoodwinked Too! Hood VS. Evil,2011-04-29,5.128,"['Comedy', 'Animation', 'Family']",30000000.0,86.0,en,-926 days,Wintersemester 0809,Wednesday,2008-10-15,39
-1,Mendy - Das Wusical,Mendy - das Wusical,2005-08-22,,['Music'],0.0,0.0,de,443 days,Wintersemester 0607,Wednesday,2006-11-08,77
-2,Checkpoint,Checkpoint,1956-12-25,,"['Crime', 'Drama', 'Thriller']",0.0,84.0,en,18221 days,Wintersemester 0607,Tuesday,2006-11-14,49
-3,Fish and Elephant,Fish and Elephant,2001-09-01,,['Romance'],0.0,106.0,zh,1907 days,Wintersemester 0607,Tuesday,2006-11-21,17
-4,Kurzfilme,Verführung von Engeln - Kurzfilme von Jan Krüger,2007-06-21,,,0.0,80.0,en,-204 days,Wintersemester 0607,Wednesday,2006-11-29,72
-5,Die Mitte,The Center,2004-04-24,,['Documentary'],0.0,85.0,en,955 days,Wintersemester 0607,Tuesday,2006-12-05,20
-6,Underground,Underground,2007-01-01,7.28,['Action'],0.0,95.0,en,-12 days,Wintersemester 0607,Wednesday,2006-12-20,21
-7,Bye Bye Berlusconi!,Bye Bye Berlusconi!,2006-02-10,,['Comedy'],0.0,0.0,it,333 days,Wintersemester 0607,Tuesday,2007-01-09,101
-8,Sympathy for Mr.Vengeance + Oldboy,,,,,,,,,Wintersemester 0607,Tuesday,2007-01-23,43
-9,Harold & Maude,Harold and the Ghosts,1994-01-01,,"['Animation', 'Comedy']",0.0,83.0,de,4792 days,Wintersemester 0607,Wednesday,2007-02-14,60
-10,Einer nach dem anderen,Ravage,2020-08-14,5.3,"['Horror', 'Thriller']",0.0,84.0,en,-1914 days,Sommersemester 15,Tuesday,2015-05-19,14
-11,Keine Lieder über Liebe,Keine Lieder über Liebe,2005-10-26,,"['Music', 'Drama', 'Romance']",0.0,98.0,de,175 days,Sommersemester 06,Wednesday,2006-04-19,80
-12,L.A. Crash,The Show Must Go Off!: Dance Hall Crashers - Live at the House of Blues L.A.,2005-01-01,,['Music'],0.0,76.0,en,479 days,Sommersemester 06,Tuesday,2006-04-25,104
-13,Flame,Flame,1975-02-13,,"['Drama', 'Music']",0.0,91.0,en,11401 days,Sommersemester 06,Tuesday,2006-05-02,18
-14,Hallesche Kometen,Hallesche Kometen,2006-01-19,,['Drama'],0.0,83.0,de,125 days,Sommersemester 06,Wednesday,2006-05-24,15
-15,Die drei ??? und der seltsame Wecker,Die drei ??? LIVE – und der seltsame Wecker,2010-02-05,,"['Mystery', 'Thriller', 'Crime']",0.0,144.0,de,-1333 days,Sommersemester 06,Tuesday,2006-06-13,87
-16,Moi et mon blanc,Moi et mon blanc,2003-05-19,,,0.0,97.0,fr,1128 days,Sommersemester 06,Tuesday,2006-06-20,30
-17,Underexposure,Underexposure,2005-08-04,,,0.0,65.0,en,355 days,Sommersemester 06,Tuesday,2006-07-25,21
-18,Westerland,Westerland,2012-10-21,,"['Drama', 'Romance']",0.0,85.0,de,546 days,Sommersemester 14,Sunday,2014-04-20,0
-19,Art War,Art of War,2024-03-18,,['Drama'],0.0,95.0,zh,-3596 days,Sommersemester 14,Wednesday,2014-05-14,6
-20,Aladdin,Aladdin,2019-05-22,7.108,"['Adventure', 'Fantasy', 'Romance', 'Family']",183000000.0,127.0,en,-1799 days,Sommersemester 14,Wednesday,2014-06-18,32
-21,Lunchbox,Lunchbox,2019-01-09,,['Drama'],0.0,11.0,cs,-1659 days,Sommersemester 14,Wednesday,2014-06-25,18
-22,Und morgen Mittag bin ich tot,Zurich,2014-02-13,,['Drama'],0.0,102.0,de,152 days,Sommersemester 14,Tuesday,2014-07-15,29
-23,10 Milliarden,10 Billion: What's On Your Plate,2015-04-16,,['Documentary'],0.0,107.0,de,1671 days,Wintersemester 1920,Tuesday,2019-11-12,42
-24,Sytemsprenger,,,,,,,,,Wintersemester 1920,Wednesday,2019-11-13,451
-25,Laurence Always,,,,,,,,,Wintersemester 1920,Wednesday,2019-12-04,14
-26,Liebeslied,Liebeslied,2009-12-10,,,0.0,94.0,de,131 days,Sommersemester 10,Tuesday,2010-04-20,40
-27,Résiste – Aufstand der Praktikanten,Résiste - Aufstand der Praktikanten,2009-11-12,,['Comedy'],0.0,0.0,de,167 days,Sommersemester 10,Wednesday,2010-04-28,18
-28,Klassiker: Alice In Wonderland 1951 *,,,,,,,,,Sommersemester 10,Tuesday,2010-05-11,111
-29,Die Anwälte - Eine deutsche Geschichte,The Lawyers,2009-11-19,,['Documentary'],0.0,92.0,de,180 days,Sommersemester 10,Tuesday,2010-05-18,111
-30,Afrikawoche: In My Country,,,,,,,,,Sommersemester 10,Tuesday,2010-06-08,33
-31,Klassiker: Das Cabinet des Dr. Caligari *,,,,,,,,,Sommersemester 10,Tuesday,2010-06-15,10
-32,Dust (engl),,,,,,,,,Sommersemester 10,Tuesday,2010-06-29,9
-33,Alice In Wonderland 2010 *,,,,,,,,,Sommersemester 10,Wednesday,2010-06-30,140
-34,River,River,2021-09-03,,['Documentary'],0.0,75.0,en,445 days,Wintersemester 2223,Tuesday,2022-11-22,10
-35,Die Odyssee,Die Odyssee der Kinder,2012-03-05,,['Documentary'],0.0,0.0,de,3930 days,Wintersemester 2223,Thursday,2022-12-08,0
-36,Tiger & Dragon,Tiger 3,2023-11-12,5.9,"['Action', 'Adventure', 'Thriller']",38000000.0,155.0,hi,-305 days,Wintersemester 2223,Wednesday,2023-01-11,0
-37,Blutsauger,Bloodsuckers,2022-05-12,,"['Drama', 'History', 'Fantasy']",0.0,125.0,de,245 days,Wintersemester 2223,Thursday,2023-01-12,12
-38,The Other Side of the River,The Other Side of the River,2022-05-20,,['Drama'],250000.0,107.0,gu,250 days,Wintersemester 2223,Wednesday,2023-01-25,8
-39,Red Rocket (Universal Sneak),,,,,,,,,Wintersemester 2223,Thursday,2023-02-02,9
-40,Auf der anderen Seite der Leinwand + Ferdinand der Stier,,,,,,,,,Wintersemester 1011,Wednesday,2010-10-27,10
-41,Ganz nah bei Dir,Ganz nah bei Dir,2009-01-29,,"['Drama', 'Comedy']",0.0,88.0,de,663 days,Wintersemester 1011,Tuesday,2010-11-23,39
-42,Die Konferenz der Tiere (1969) + Der Conny ihr Pony,,,,,,,,,Wintersemester 1011,Wednesday,2010-11-24,22
-43,#9 + Bob,,,,,,,,,Wintersemester 1011,Wednesday,2010-12-08,16
-44,Katze im Sack,Let the Cat Out of the Bag,2005-01-20,,['Drama'],0.0,87.0,de,2161 days,Wintersemester 1011,Tuesday,2010-12-21,10
-45,The Jungle Book + Wallace & Gromit: Unter Schafen,,,,,,,,,Wintersemester 1011,Wednesday,2010-12-22,37
-46,Deutsche Seelen,German Souls,2010-07-01,,['Documentary'],0.0,96.0,de,194 days,Wintersemester 1011,Tuesday,2011-01-11,21
-47,Fantastic Mr. Fox + Ein Leben in der Schachtel,,,,,,,,,Wintersemester 1011,Wednesday,2011-01-19,27
-48,14 Kilometer,14 Kilometers,2007-11-02,,['Drama'],0.0,95.0,es,1187 days,Wintersemester 1011,Tuesday,2011-02-01,19
-49,Schande,Schande,1999-04-07,,['Drama'],0.0,90.0,de,4319 days,Wintersemester 1011,Wednesday,2011-02-02,35
-50,RR - Railroad,,,,,,,,,Wintersemester 1011,Tuesday,2011-02-08,1
-51,Im Westen nichts Neues,All Quiet on the Western Front,2022-10-07,7.736,"['Drama', 'War', 'Action']",20000000.0,147.0,de,-6156 days,Wintersemester 0506,Tuesday,2005-11-29,61
-52,Frida,Frida,2024-03-08,7.9,['Documentary'],0.0,87.0,en,-6603 days,Wintersemester 0506,Wednesday,2006-02-08,81
-53,Wir wollten aufs Meer (StaatsGewalt),,,,,,,,,Wintersemester 1314,Tuesday,2013-11-05,1
-54,Promised Land,The Promised Land,2023-10-05,7.705,"['History', 'Drama']",8500000.0,127.0,da,-3614 days,Wintersemester 1314,Tuesday,2013-11-12,18
-55,5 Jahre Leben (StaatsGewalt),,,,,,,,,Wintersemester 1314,Tuesday,2013-11-19,2
-56,Brazil (StaatsGewalt Klassiker),,,,,,,,,Wintersemester 1314,Wednesday,2013-11-20,18
-57,Camp 14 – Total Control Zone (StaatsGewalt),,,,,,,,,Wintersemester 1314,Wednesday,2013-11-27,22
-58,Drecksau,Harrinator,2017-10-22,,['Comedy'],0.0,90.0,de,-1370 days,Wintersemester 1314,Tuesday,2014-01-21,24
-59,Bastard,Bastard,2015-10-16,4.7,['Horror'],0.0,82.0,en,-619 days,Wintersemester 1314,Tuesday,2014-02-04,3
-60,Texas Chainsaw Massacre,Texas Chainsaw Massacre,2022-02-18,5.214,"['Horror', 'Thriller']",20000000.0,83.0,en,-2669 days,Wintersemester 1415,Wednesday,2014-10-29,23
-61,Grand Budapest Vietnam,,,,,,,,,Wintersemester 1415,Tuesday,2014-11-11,91
-62,Dallas Buyer Club,,,,,,,,,Wintersemester 1415,Tuesday,2014-11-18,132
-63,Jackpot,Jackpot,2024-08-15,,"['Action', 'Comedy']",0.0,0.0,en,-3544 days,Wintersemester 1415,Tuesday,2014-12-02,9
-64,Monsieur Claude und seine Töchter,Serial (Bad) Weddings 2,2019-01-30,5.882,['Comedy'],18500000.0,99.0,fr,-1513 days,Wintersemester 1415,Tuesday,2014-12-09,186
-65,Mandela,Mandela,1987-09-20,,"['TV Movie', 'Drama']",0.0,135.0,en,9943 days,Wintersemester 1415,Wednesday,2014-12-10,34
-66,Marry Poppins,,,,,,,,,Wintersemester 1415,Wednesday,2015-01-14,36
-67,Feuerwerk am hellichten Tag,,,,,,,,,Wintersemester 1415,Wednesday,2015-01-21,7
-68,SpiderMan Spider Verse,Spider-Man: Across the Spider-Verse,2023-05-31,8.4,"['Animation', 'Action', 'Adventure', 'Science Fiction']",100000000.0,140.0,en,-1485 days,Sommersemester 19,Tuesday,2019-05-07,96
-69,Sneak 1,,,,,,,,,Sommersemester 19,Tuesday,2019-05-21,30
-70,Boys for Sale,Boys for Sale,1981-02-01,,,0.0,118.0,en,13994 days,Sommersemester 19,Monday,2019-05-27,112
-71,K Sneak 1,,,,,,,,,Sommersemester 19,Wednesday,2019-05-29,28
-72,Astrid,Astrid,2021-01-03,,['Documentary'],0.0,0.0,es,-578 days,Sommersemester 19,Wednesday,2019-06-05,52
-73,Dogman,Dogman,2023-09-27,7.843,"['Action', 'Drama', 'Crime']",22700000.0,115.0,fr,-1574 days,Sommersemester 19,Thursday,2019-06-06,5
-74,The End of Meat,The End of Meat,2017-09-14,,['Documentary'],0.0,94.0,de,650 days,Sommersemester 19,Wednesday,2019-06-26,38
-75,K Sneak 2,,,,,,,,,Sommersemester 19,Wednesday,2019-07-10,31
-76,Little Woman,a little woman,2023-06-02,,['Drama'],2.0,12.0,ca,-576 days,Wintersemester 2122,Wednesday,2021-11-03,42
-77,Nomandland,,,,,,,,,Wintersemester 2122,Wednesday,2021-11-10,42
-78,Mein Glück,Du bist mein Glück,1936-10-06,,['Drama'],0.0,0.0,de,27237 days,Sommersemester 11,Tuesday,2011-05-03,28
-79,This Prison where I live,This Prison Where I Live,2010-06-28,,['Documentary'],0.0,90.0,en,380 days,Sommersemester 11,Wednesday,2011-07-13,10
-80,Elly …OmU,,,,,,,,,Sommersemester 11,Wednesday,2011-06-08,9
-81,Gesang der Flusskrebse,Where the Crawdads Sing,2022-07-14,7.549,"['Drama', 'Mystery', 'Romance']",24000000.0,126.0,en,-3738 days,Sommersemester 12,Thursday,2012-04-19,11
-82,The Story Won’t Die,The Story Won't Die,2021-04-29,,['Documentary'],0.0,83.0,en,727 days,Sommersemester 23,Wednesday,2023-04-26,17
-83,Alle reden übers Wetter,Talking About the Weather,2022-09-16,,['Drama'],0.0,89.0,de,235 days,Sommersemester 23,Tuesday,2023-05-09,8
-84,Animals,Animals,,,"['Crime', 'Thriller']",0.0,0.0,en,,Sommersemester 23,Wednesday,2023-06-07,1
-85,Sara Mardini – Gegen den Strom,Long Distance Swimmer: Sara Mardini,2024-03-23,,['Documentary'],0.0,88.0,en,-268 days,Sommersemester 23,Thursday,2023-06-29,10
-86,Safari,Safari,1956-06-20,,['Adventure'],0.0,90.0,en,22274 days,Sommersemester 17,Wednesday,2017-06-14,0
-87,The Tribe,The Tribe,1998-06-21,,['Drama'],0.0,105.0,en,6940 days,Sommersemester 17,Wednesday,2017-06-21,6
-88,Music & Lyrics,Music is on the Menu: Melim,2023-09-22,,"['Music', 'Documentary']",0.0,27.0,pt,-5819 days,Wintersemester 0708,Wednesday,2007-10-17,48
-89,Bahn unterm Hammer + The Navigators,,,,,,,,,Wintersemester 0809,Thursday,2008-11-06,10
-90,Deep Frozen,,,,,,,,,Wintersemester 0708,Tuesday,2007-11-13,17
-91,Hard Pill,Hard Pill,2005-07-15,,['Drama'],0.0,94.0,en,1238 days,Wintersemester 0809,Thursday,2008-12-04,37
-92,Ode an die Freude,The Ode to Joy,2006-06-17,,"['Drama', 'History', 'War', 'Music']",0.0,135.0,ja,542 days,Wintersemester 0708,Tuesday,2007-12-11,20
-93,Dealer,Dealer,2021-10-14,5.3,['Drama'],0.0,100.0,nl,-5021 days,Wintersemester 0708,Tuesday,2008-01-15,22
-94,Das Fräulein,Fraulein,2006-08-07,,['Drama'],0.0,81.0,de,533 days,Wintersemester 0708,Tuesday,2008-01-22,19
-95,Zoomania/Zootopia(OmU),,,,,,,,,Wintersemester 1617,Tuesday,2016-10-25,198
-96,Die Farbe des Ozeans (refugee law clinic/ amnesty),,,,,,,,,Wintersemester 1617,Wednesday,2016-11-09,60
-97,Tangerine L.A. (Identitätenreferat),,,,,,,,,Wintersemester 1617,Wednesday,2016-11-16,19
-98,Théo et Hugo dans le même bateau (Aidshilfe) ,,,,,,,,,Wintersemester 1617,Wednesday,2016-11-23,15
-99,"Silver Shoes (Frauenreferat, CePoG) ",,,,,,,,,Wintersemester 1617,Tuesday,2016-11-29,68
-100,The Nice Guys (2016),,,,,,,,,Wintersemester 1617,Wednesday,2016-11-30,47
-101,Die Feuerzangenbowle (Kulturreferat),,,,,,,,,Wintersemester 1617,Tuesday,2016-12-06,170
-102,Into the Wild (Philos),,,,,,,,,Wintersemester 1617,Wednesday,2016-12-07,93
-103,90 Minuten - Bei Abpfiff Frieden,The 90 Minute War,2016-06-30,,"['Comedy', 'Documentary']",0.0,90.0,he,167 days,Wintersemester 1617,Wednesday,2016-12-14,8
-104,Redline (Manga Club),,,,,,,,,Wintersemester 1617,Wednesday,2016-12-21,19
-105,Suicide Squad (2016),,,,,,,,,Wintersemester 1516,Sunday,2016-01-10,105
-106,Toni Erdmann ,Toni Erdmann,2016-07-14,6.99,"['Comedy', 'Drama']",10000000.0,162.0,de,-185 days,Wintersemester 1516,Monday,2016-01-11,87
-107,Captain Fantastic,Captain Fantastic,2016-07-08,7.912,"['Adventure', 'Drama']",5000000.0,118.0,en,-173 days,Wintersemester 1516,Sunday,2016-01-17,119
-108,Steamboat Bill Jr. (Big Band),,,,,,,,,Wintersemester 1516,Monday,2016-01-18,96
-109,Clockwork Orange (Philos),,,,,,,,,Wintersemester 1516,Monday,2016-01-25,54
-110,Lobster,Lobster,,6.86,['Comedy'],1500.0,6.0,en,,Wintersemester 1516,Sunday,2016-01-31,67
-111,Wiener Dog,Wiener-Dog,2016-06-24,5.633,"['Comedy', 'Drama']",0.0,88.0,en,-137 days,Wintersemester 1516,Monday,2016-02-08,13
-112,Gozilla (1954),,,,,,,,,Wintersemester 1718,Tuesday,2017-11-07,38
-113,Man for a Day,Man for a Day,2012-07-19,,['Documentary'],0.0,96.0,en,1609 days,Wintersemester 1617,Wednesday,2016-12-14,7
-114,Mapplethorpe,Mapplethorpe,2019-03-01,6.6,"['Drama', 'History']",0.0,102.0,en,-772 days,Wintersemester 1617,Wednesday,2017-01-18,6
-115,Zwischen den Stühlen,Zwischen den Stühlen,2017-05-18,,,0.0,101.0,de,252 days,Wintersemester 1718,Thursday,2018-01-25,75
-116,Sein oder Nichtsein,Alles was recht ist - Sein oder Nichtsein,2011-01-20,,"['TV Movie', 'Comedy']",0.0,0.0,de,636 days,Wintersemester 1213,Wednesday,2012-10-17,42
-117,Work hard – play hard,Work Hard Play Hard,2012-04-12,,['Documentary'],0.0,90.0,de,208 days,Wintersemester 1213,Tuesday,2012-11-06,36
-118,Der Heiratsvermittler – Nesvatbov,,,,,,,,,Wintersemester 1213,Tuesday,2012-11-20,5
-119,Hinter der Tür,Hinter der Tür,,,['Drama'],0.0,0.0,de,,Wintersemester 1213,Wednesday,2012-11-21,23
-120,…und es kommt noch schlimmer - A bude hur,,,,,,,,,Wintersemester 1213,Tuesday,2012-12-04,10
-121,Kaddisch für einen Freund,Kaddisch für einen Freund,2012-03-15,,"['Drama', 'Comedy']",0.0,0.0,de,306 days,Wintersemester 1213,Tuesday,2013-01-15,8
-122,Ufo in your eyes,,,,,,,,,Wintersemester 1213,Tuesday,2013-01-29,8
-123,Töte mich,Kill Me,2012-04-25,,['Drama'],0.0,91.0,de,280 days,Wintersemester 1213,Wednesday,2013-01-30,7
-124,Wunschfilm (Rum Diary),,,,,,,,,Wintersemester 1213,Wednesday,2013-02-06,23
-125,Janosch komm wir finden einen schatz,"Janosch – Komm, wir finden einen Schatz",2012-10-26,,"['Animation', 'Family']",0.0,0.0,de,31 days,Wintersemester 1213,Monday,2012-11-26,56
-126,System Error,System Error,2018-05-10,,['Documentary'],0.0,95.0,de,168 days,Wintersemester 1819,Thursday,2018-10-25,29
-127,Wildes Herz,Wild Heart,2018-04-12,7.02,"['Music', 'Documentary']",0.0,88.0,de,-155 days,Wintersemester 1718,Wednesday,2017-11-08,67
-128,The Cleaners,The Cleaners,2022-07-20,,,0.0,105.0,fr,-1345 days,Wintersemester 1819,Tuesday,2018-11-13,47
-129,Fetisch Karl Marx,Fetisch Karl Marx,2018-05-02,,['Documentary'],0.0,0.0,de,197 days,Wintersemester 1819,Thursday,2018-11-15,10
-130,Hamburger Gitter,Hamburger Gitter,2018-06-22,,['Documentary'],0.0,76.0,de,153 days,Wintersemester 1819,Thursday,2018-11-22,105
-131,Landrauschen,Landrauschen,2018-01-23,,"['Drama', 'Comedy']",0.0,105.0,de,316 days,Wintersemester 1819,Wednesday,2018-12-05,9
-132,Einer flog übers Kuckucksnest,,,,,,,,,Wintersemester 1819,Thursday,2018-12-13,31
-133,Foxtrot,Foxtrot,1976-03-01,,['Drama'],0.0,91.0,en,15633 days,Wintersemester 1819,Wednesday,2018-12-19,2
-134,Bad Banks ½,,,,,,,,,Wintersemester 1718,Tuesday,2018-01-09,5
-135,Bad Banke 2/2,,,,,,,,,Wintersemester 1718,Wednesday,2018-01-10,3
-136,Christopher Robin,Christopher Robin,2018-08-01,7.319,"['Adventure', 'Comedy', 'Family', 'Fantasy']",75000000.0,104.0,en,-198 days,Wintersemester 1718,Monday,2018-01-15,44
-137,Dora oder die sexuellen Neuroen,,,,,,,,,Wintersemester 1718,Tuesday,2018-01-16,15
-138,Tully,Tully,2018-05-04,6.783,"['Comedy', 'Drama']",0.0,96.0,en,-102 days,Wintersemester 1718,Monday,2018-01-22,10
-139,"Utoya, 22. Juli",Utøya: July 22,2018-03-09,7.2,"['History', 'Drama']",688960.0,92.0,no,-32 days,Wintersemester 1718,Monday,2018-02-05,32
-140,Under the Silver Lake,Under the Silver Lake,2018-06-21,6.4,"['Crime', 'Drama', 'Mystery']",8500000.0,139.0,en,-135 days,Wintersemester 1718,Tuesday,2018-02-06,16
-141,Teheren Tabu,,,,,,,,,Sommersemester 18,Tuesday,2018-04-17,17
-142,Hausu,Rorikon hausu: Oshimeri Junko,1983-11-18,,['Drama'],0.0,67.0,ja,12584 days,Sommersemester 18,Wednesday,2018-05-02,39
-143,Blackploitation DF,,,,,,,,,Sommersemester 18,Tuesday,2018-06-12,19
-144,Nichts als Gespenster,Nichts als Gespenster,2006-11-29,,"['Comedy', 'Drama']",0.0,119.0,de,503 days,Sommersemester 08,Tuesday,2008-04-15,39
-145,Ich kenn keinen - Allein unter Heteros,Talk Straight: The World of Rural Queers,2003-02-07,,['Documentary'],0.0,99.0,de,1929 days,Sommersemester 08,Tuesday,2008-05-20,81
-146,Weißt was geil wär,Weißt was geil wär...?!,2007-01-11,,['Comedy'],0.0,97.0,de,503 days,Sommersemester 08,Wednesday,2008-05-28,28
-147,WWW-What a Wonderful World,WWW: What a Wonderful World,2006-09-03,,"['Drama', 'Thriller']",0.0,99.0,en,639 days,Sommersemester 08,Tuesday,2008-06-03,25
-148,ostPunk!!!,OstPunk! Too much Future,2006-01-01,,['Documentary'],0.0,92.0,de,898 days,Sommersemester 08,Tuesday,2008-06-17,17
-149,Midnights Movies + TRHPS,,,,,,,,,Sommersemester 08,Wednesday,2008-07-02,26
-150,Borat,Borat Subsequent Moviefilm,2020-10-23,6.5,['Comedy'],0.0,96.0,en,-4944 days,Sommersemester 07,Wednesday,2007-04-11,68
-151,Das Parfum,Das Parfüm: Die wahre Geschichte,2014-06-14,,['Documentary'],0.0,0.0,de,-2615 days,Sommersemester 07,Tuesday,2007-04-17,112
-152,Kukushka,Strocha: Trinity Rituals in Kukushka Village of Kochyovsky District,2023-01-01,,['Documentary'],0.0,45.0,ru,-5717 days,Sommersemester 07,Tuesday,2007-05-08,64
-153,Der die Tollkirsche ausgräbt & Nach 5 im Urwald,Der die Tollkirsche ausgräbt,2006-02-13,,,0.0,40.0,de,457 days,Sommersemester 07,Wednesday,2007-05-16,27
-154,Auberge Espagnole 1+2,,,,,,,,,Sommersemester 07,Tuesday,2007-06-19,127
-155,Der Lebensversicherer,Running on Empty,2006-02-14,,['Drama'],0.0,100.0,de,491 days,Sommersemester 07,Wednesday,2007-06-20,16
-156,Yossi & Jagger,Yossi,2012-05-16,6.9,"['Drama', 'Romance']",500000.0,84.0,he,-1771 days,Sommersemester 07,Wednesday,2007-07-11,20
-157,Jugend ohne Jugend,Godless Youth,2017-08-31,6.2,"['Science Fiction', 'Thriller', 'Drama']",0.0,114.0,de,-3053 days,Sommersemester 09,Wednesday,2009-04-22,17
-158,Frauenreferat: Das Fremde in Mir,,,,,,,,,Sommersemester 09,Tuesday,2009-04-28,43
-159,Schwulenreferat: The Times of Harvey Milk,,,,,,,,,Sommersemester 09,Tuesday,2009-05-05,34
-160,Israelwoche: Alles für meinen Vater,,,,,,,,,Sommersemester 09,Tuesday,2009-05-12,37
-161,Israelwoche: Waltz with Bashir,,,,,,,,,Sommersemester 09,Wednesday,2009-05-13,87
-162,Afrika Fokus: Tsotsi,,,,,,,,,Sommersemester 09,Tuesday,2009-05-26,50
-163,Polarkreis: So finster die Nacht,,,,,,,,,Sommersemester 09,Tuesday,2009-06-23,40
-164,Finnischer Tango,Finnischer Tango,2008-08-28,,"['Drama', 'Comedy']",0.0,90.0,de,306 days,Sommersemester 09,Tuesday,2009-06-30,7
-165,Polarkreis: Die Kunst des negativen Denkens,,,,,,,,,Sommersemester 09,Wednesday,2009-07-01,51
-166,Schotter wie Heu,Gravel Like Hay,2002-01-01,,['Documentary'],0.0,0.0,de,2744 days,Sommersemester 09,Tuesday,2009-07-07,14
-167,Künstlerwoche & Polarkr.: Drawing Restraint 9,,,,,,,,,Sommersemester 09,Wednesday,2009-07-08,13
-168,Polarkreis: Anderland,,,,,,,,,Sommersemester 09,Wednesday,2009-07-15,12
-169,Polarkreis: Into the Wild,,,,,,,,,Sommersemester 09,Wednesday,2009-07-22,42
-170,Morgen irgendwo am Meer,Morgen irgendwo am Meer,2023-04-15,,"['Romance', 'Comedy', 'Adventure']",0.0,0.0,de,201 days,Wintersemester 2324,Thursday,2023-11-02,11
-171,I Origins (Sneak),,,,,,,,,Wintersemester 2324,Tuesday,2023-11-28,0
-172,Past Lives,Past Lives,2023-06-02,7.8,"['Drama', 'Romance']",12000000.0,106.0,en,-144 days,Wintersemester 2223,Monday,2023-01-09,30
-173,Jeder schreibt für sich allein,Melting Ink,2023-08-24,,['Documentary'],0.0,169.0,de,-226 days,Wintersemester 2223,Tuesday,2023-01-10,5
-174,The Matrix (Sneak),,,,,,,,,Wintersemester 2223,Wednesday,2023-01-18,0
-175,Broker,Broker,2010-12-31,,['Drama'],0.0,125.0,te,4413 days,Wintersemester 2223,Monday,2023-01-30,6
-176,Mishima,Miss Mishima,2011-09-15,,['Horror'],0.0,14.0,pt,4156 days,Wintersemester 2223,Tuesday,2023-01-31,20
-177,Das Lehrerzimmer,The Teachers' Lounge,2023-05-04,7.341,"['Drama', 'Thriller']",0.0,98.0,de,-87 days,Wintersemester 2223,Monday,2023-02-06,16
-178,Beau is Afraid,Beau Is Afraid,2023-04-14,6.741,"['Comedy', 'Adventure', 'Fantasy']",35000000.0,179.0,en,-66 days,Wintersemester 2223,Tuesday,2023-02-07,4
-179,The Voices durften wir umsonst zeigen,,,,,,,,,Wintersemester 1516,Tuesday,2016-02-02,19
-180,Deutsche Kurzfilmpreis-Auswahl,,,,,,,,,Sommersemester 13,Wednesday,2013-04-17,10
-181,Hanna Arendt,,,,,,,,,Sommersemester 13,Tuesday,2013-05-14,140
-182,Inuk,Inuk,2012-05-11,,"['Adventure', 'Drama']",0.0,90.0,kl,382 days,Sommersemester 13,Tuesday,2013-05-28,3
-183,Süßes Gift - Hilfe als Geschäft,Sweet Poison,2012-09-30,,['Documentary'],0.0,54.0,de,248 days,Sommersemester 13,Wednesday,2013-06-05,12
-184,Frankenweenie (1984 + 2012),,,,,,,,,Sommersemester 13,Tuesday,2013-07-09,48
-185,Invasion,Invasion,1969-10-16,,['Drama'],0.0,123.0,es,15973 days,Sommersemester 13,Wednesday,2013-07-10,3
-186,Speed - Auf der Suche nach der verlorenen Zeit,Speed - In Search of Lost Time,2012-09-28,,['Documentary'],0.0,0.0,de,291 days,Sommersemester 13,Tuesday,2013-07-16,13
-187,Ich - Einfach unverbesserlich,Ich einfach unverbesserlich - 6 Mini-Movies Collection,2014-10-16,,,0.0,0.0,en,-1100 days,Wintersemester 1112,Wednesday,2011-10-12,81
-188,Joschka und Herr Fischer,Joschka und Herr Fischer,2011-05-19,,"['Documentary', 'History']",0.0,138.0,de,160 days,Wintersemester 1112,Wednesday,2011-10-26,107
-189,Der Albaner,The Albanian,2010-06-28,,['Drama'],0.0,105.0,sq,499 days,Wintersemester 1112,Wednesday,2011-11-09,20
-190,Unter Kontrolle,Under Control,2011-04-02,,['Documentary'],0.0,98.0,de,241 days,Wintersemester 1112,Tuesday,2011-11-29,14
-191,Burke und Hare,,,,,,,,,Wintersemester 1112,Tuesday,2011-12-06,32
-192,Roller Girl,Roller Girl,2020-04-23,,['Horror'],0.0,3.0,en,-3054 days,Wintersemester 1112,Tuesday,2011-12-13,19
-193,Der Dieb des Lichts,The Light Thief,2011-03-02,,['Drama'],0.0,80.0,ky,314 days,Wintersemester 1112,Tuesday,2012-01-10,11
-194,White Box,White Box,2006-10-10,,['Drama'],0.0,27.0,de,1925 days,Wintersemester 1112,Tuesday,2012-01-17,4
-195,Polnische Ostern,Polnische Ostern,2011-05-11,,['Comedy'],0.0,0.0,de,259 days,Wintersemester 1112,Wednesday,2012-01-25,16
-196,Wir schaffen das schon,Das schaffen wir schon,2017-09-07,,"['Comedy', 'Thriller']",0.0,0.0,de,-2046 days,Wintersemester 1112,Tuesday,2012-01-31,12
-197,In der Welt habt ihr Angst,In der Welt habt ihr Angst,2011-03-03,,['Drama'],90.0,109.0,de,341 days,Wintersemester 1112,Tuesday,2012-02-07,22
-198,Schau mich an!,Don't Look at Me That Way,2016-06-16,6.62,['Drama'],27500.0,88.0,de,-4054 days,Sommersemester 05,Wednesday,2005-05-11,38
-199,Mir zeynen do!,,,,,,,,,Sommersemester 05,Tuesday,2005-05-24,20
-200,Der Schmetterling,The Golden Butterfly,1926-07-31,,['Drama'],0.0,77.0,de,28802 days,Sommersemester 05,Wednesday,2005-06-08,43
-201,Coffee & Cigarettes,The Coffee Table,2024-04-19,6.98,"['Horror', 'Drama', 'Thriller', 'Comedy']",0.0,90.0,es,-6883 days,Sommersemester 05,Wednesday,2005-06-15,140
-202,Status Yo!,Status Yo!,2004-11-04,,"['Drama', 'Music']",0.0,118.0,de,244 days,Sommersemester 05,Wednesday,2005-07-06,29
-203,Zusammen,Alle zusammen - Eine Stadt steigt auf - Die Doku,2023-05-25,,['Documentary'],0.0,0.0,de,-6545 days,Sommersemester 05,Thursday,2005-06-23,15
-204,Das Fest,Impreza,2017-10-01,,['Documentary'],0.0,75.0,pl,-4482 days,Sommersemester 05,Friday,2005-06-24,9
-205,Dorfpunks,Dorfpunks,2009-10-10,,"['Comedy', 'Drama']",0.0,90.0,de,11 days,Wintersemester 0910,Wednesday,2009-10-21,59
-206,Home,Home,2015-03-18,6.794,"['Fantasy', 'Comedy', 'Animation', 'Science Fiction', 'Family']",135000000.0,94.0,en,-1954 days,Wintersemester 0910,Tuesday,2009-11-10,31
-207,Kleine Verbrechen,Small Crime,2008-11-17,,"['Comedy', 'Crime', 'Romance']",0.0,84.0,el,365 days,Wintersemester 0910,Tuesday,2009-11-17,41
-208,Sens Interdits,Sens interdits,2009-01-20,,,0.0,90.0,fr,308 days,Wintersemester 0910,Tuesday,2009-11-24,14
-209,Die Eisbombe,Die Eisbombe,2008-08-07,,"['Drama', 'Comedy']",0.0,95.0,de,482 days,Wintersemester 0910,Wednesday,2009-12-02,26
-210,The Lion King,The Lion King,2019-07-12,7.116,"['Adventure', 'Drama', 'Family', 'Animation']",260000000.0,118.0,en,-3495 days,Wintersemester 0910,Wednesday,2009-12-16,118
-211,Radio Rock Revolution,Something In The Air: A Rock Radio Revolution,,,['Documentary'],0.0,84.0,en,,Wintersemester 0910,Wednesday,2010-01-13,65
-212,Short Cut to Hollywood,Short Cut to Hollywood,2009-09-24,,['Comedy'],0.0,94.0,de,117 days,Wintersemester 0910,Tuesday,2010-01-19,18
-213,Das Herz von Jenin,The Heart of Jenin,2008-08-13,,['Documentary'],0.0,89.0,de,531 days,Wintersemester 0910,Tuesday,2010-01-26,37
-214,Woodstock (DC),,,,,,,,,Wintersemester 0708,Sunday,2008-01-27,28
-215,Nacht der Helden: Flash Gordon / Batman hält …,,,,,,,,,Wintersemester 0910,Wednesday,2010-02-10,56
-216,Princess,Princess Cursed in Time: Alchemist's Quest,2022-11-17,,"['Family', 'Fantasy', 'Comedy']",0.0,133.0,cs,-4656 days,Wintersemester 0910,Wednesday,2010-02-17,9
-217,Der Kuaför aus der Keupstraße,The Barber And The Bomb,2016-02-25,,['Documentary'],0.0,97.0,de,104 days,Sommersemester 16,Wednesday,2016-06-08,25
-218,Klassiker Sneak,,,,,,,,,Sommersemester 22,Thursday,2022-04-21,16
-219,Der Rausch,Anselm,2023-10-12,7.043,['Documentary'],0.0,93.0,de,-531 days,Sommersemester 22,Friday,2022-04-29,3
-220,The Suicide Squade,Suicide Squad,1991-01-01,,,0.0,0.0,en,11442 days,Sommersemester 22,Saturday,2022-04-30,12
-221,Klassiker Sneak,,,,,,,,,Sommersemester 22,Wednesday,2022-06-01,34
-222,Die Unbeugsamen,Die Unbeugsamen,2021-08-26,,['Documentary'],0.0,99.0,de,300 days,Sommersemester 22,Wednesday,2022-06-22,14
-223,Are you lonesome tonight?,Are You Lonesome Tonight?,2021-06-12,,"['Crime', 'Drama', 'Mystery', 'Thriller', 'Romance']",0.0,95.0,zh,382 days,Sommersemester 22,Wednesday,2022-06-29,3
-224,Klassiker Sneak,,,,,,,,,Sommersemester 22,Thursday,2022-07-07,7
-225,Pettit Maman,,,,,,,,,Sommersemester 22,Wednesday,2022-07-13,5
+0,Mendy - Das Wusical,Mendy - das Wusical,2005-08-22,,['Music'],0.0,0.0,de,443 days,Wintersemester 0607,Wednesday,2006-11-08,77
+1,Checkpoint,Checkpoint,1956-12-25,,"['Crime', 'Drama', 'Thriller']",0.0,84.0,en,18221 days,Wintersemester 0607,Tuesday,2006-11-14,49
+2,Fish and Elephant,Fish and Elephant,2001-09-01,,['Romance'],0.0,106.0,zh,1907 days,Wintersemester 0607,Tuesday,2006-11-21,17
+3,Kurzfilme,Verführung von Engeln - Kurzfilme von Jan Krüger,2007-06-21,,,0.0,80.0,en,-204 days,Wintersemester 0607,Wednesday,2006-11-29,72
+4,Die Mitte,The Center,2004-04-24,,['Documentary'],0.0,85.0,en,955 days,Wintersemester 0607,Tuesday,2006-12-05,20
+5,Underground,Underground,2007-01-01,7.28,['Action'],0.0,95.0,en,-12 days,Wintersemester 0607,Wednesday,2006-12-20,21
+6,Bye Bye Berlusconi!,Bye Bye Berlusconi!,2006-02-10,,['Comedy'],0.0,0.0,it,333 days,Wintersemester 0607,Tuesday,2007-01-09,101
+7,Sympathy for Mr.Vengeance + Oldboy,,,,,,,,,Wintersemester 0607,Tuesday,2007-01-23,43
+8,Harold & Maude,Harold and the Ghosts,1994-01-01,,"['Animation', 'Comedy']",0.0,83.0,de,4792 days,Wintersemester 0607,Wednesday,2007-02-14,60
+9,Einer nach dem anderen,Ravage,2020-08-14,5.3,"['Horror', 'Thriller']",0.0,84.0,en,-1914 days,Sommersemester 15,Tuesday,2015-05-19,14
+10,Keine Lieder über Liebe,Keine Lieder über Liebe,2005-10-26,,"['Music', 'Drama', 'Romance']",0.0,98.0,de,175 days,Sommersemester 06,Wednesday,2006-04-19,80
+11,L.A. Crash,The Show Must Go Off!: Dance Hall Crashers - Live at the House of Blues L.A.,2005-01-01,,['Music'],0.0,76.0,en,479 days,Sommersemester 06,Tuesday,2006-04-25,104
+12,Flame,Flame,1975-02-13,,"['Drama', 'Music']",0.0,91.0,en,11401 days,Sommersemester 06,Tuesday,2006-05-02,18
+13,Hallesche Kometen,Hallesche Kometen,2006-01-19,,['Drama'],0.0,83.0,de,125 days,Sommersemester 06,Wednesday,2006-05-24,15
+14,Die drei ??? und der seltsame Wecker,Die drei ??? LIVE – und der seltsame Wecker,2010-02-05,,"['Mystery', 'Thriller', 'Crime']",0.0,144.0,de,-1333 days,Sommersemester 06,Tuesday,2006-06-13,87
+15,Moi et mon blanc,Moi et mon blanc,2003-05-19,,,0.0,97.0,fr,1128 days,Sommersemester 06,Tuesday,2006-06-20,30
+16,Underexposure,Underexposure,2005-08-04,,,0.0,65.0,en,355 days,Sommersemester 06,Tuesday,2006-07-25,21
+17,Westerland,Westerland,2012-10-21,,"['Drama', 'Romance']",0.0,85.0,de,546 days,Sommersemester 14,Sunday,2014-04-20,0
+18,Art War,Art of War,2024-03-18,,['Drama'],0.0,95.0,zh,-3596 days,Sommersemester 14,Wednesday,2014-05-14,6
+19,Aladdin,Aladdin,2019-05-22,7.108,"['Adventure', 'Fantasy', 'Romance', 'Family']",183000000.0,127.0,en,-1799 days,Sommersemester 14,Wednesday,2014-06-18,32
+20,Lunchbox,Lunchbox,2019-01-09,,['Drama'],0.0,11.0,cs,-1659 days,Sommersemester 14,Wednesday,2014-06-25,18
+21,Und morgen Mittag bin ich tot,Zurich,2014-02-13,,['Drama'],0.0,102.0,de,152 days,Sommersemester 14,Tuesday,2014-07-15,29
+22,10 Milliarden,10 Billion: What's On Your Plate,2015-04-16,,['Documentary'],0.0,107.0,de,1671 days,Wintersemester 1920,Tuesday,2019-11-12,42
+23,Sytemsprenger,,,,,,,,,Wintersemester 1920,Wednesday,2019-11-13,451
+24,Laurence Always,,,,,,,,,Wintersemester 1920,Wednesday,2019-12-04,14
+25,Liebeslied,Liebeslied,2009-12-10,,,0.0,94.0,de,131 days,Sommersemester 10,Tuesday,2010-04-20,40
+26,Résiste – Aufstand der Praktikanten,Résiste - Aufstand der Praktikanten,2009-11-12,,['Comedy'],0.0,0.0,de,167 days,Sommersemester 10,Wednesday,2010-04-28,18
+27,Alice In Wonderland 1951,,,,,,,,,Sommersemester 10,Tuesday,2010-05-11,111
+28,Die Anwälte - Eine deutsche Geschichte,The Lawyers,2009-11-19,,['Documentary'],0.0,92.0,de,180 days,Sommersemester 10,Tuesday,2010-05-18,111
+29,Afrikawoche: In My Country,,,,,,,,,Sommersemester 10,Tuesday,2010-06-08,33
+30,Alice In Wonderland 2010,,,,,,,,,Sommersemester 10,Wednesday,2010-06-30,140
+31,River,River,2021-09-03,,['Documentary'],0.0,75.0,en,445 days,Wintersemester 2223,Tuesday,2022-11-22,10
+32,Die Odyssee,Die Odyssee der Kinder,2012-03-05,,['Documentary'],0.0,0.0,de,3930 days,Wintersemester 2223,Thursday,2022-12-08,0
+33,Tiger & Dragon,Tiger 3,2023-11-12,5.9,"['Action', 'Adventure', 'Thriller']",38000000.0,155.0,hi,-305 days,Wintersemester 2223,Wednesday,2023-01-11,0
+34,Blutsauger,Bloodsuckers,2022-05-12,,"['Drama', 'History', 'Fantasy']",0.0,125.0,de,245 days,Wintersemester 2223,Thursday,2023-01-12,12
+35,The Other Side of the River,The Other Side of the River,2022-05-20,,['Drama'],250000.0,107.0,gu,250 days,Wintersemester 2223,Wednesday,2023-01-25,8
+36,Auf der anderen Seite der Leinwand + Ferdinand der Stier,,,,,,,,,Wintersemester 1011,Wednesday,2010-10-27,10
+37,Ganz nah bei Dir,Ganz nah bei Dir,2009-01-29,,"['Drama', 'Comedy']",0.0,88.0,de,663 days,Wintersemester 1011,Tuesday,2010-11-23,39
+38,Die Konferenz der Tiere  + Der Conny ihr Pony,,,,,,,,,Wintersemester 1011,Wednesday,2010-11-24,22
+39,#9  + Bob,,,,,,,,,Wintersemester 1011,Wednesday,2010-12-08,16
+40,Katze im Sack,Let the Cat Out of the Bag,2005-01-20,,['Drama'],0.0,87.0,de,2161 days,Wintersemester 1011,Tuesday,2010-12-21,10
+41,The Jungle Book  + Wallace & Gromit: Unter Schafen,,,,,,,,,Wintersemester 1011,Wednesday,2010-12-22,37
+42,Deutsche Seelen,German Souls,2010-07-01,,['Documentary'],0.0,96.0,de,194 days,Wintersemester 1011,Tuesday,2011-01-11,21
+43,Fantastic Mr. Fox  + Ein Leben in der Schachtel,,,,,,,,,Wintersemester 1011,Wednesday,2011-01-19,27
+44,14 Kilometer,14 Kilometers,2007-11-02,,['Drama'],0.0,95.0,es,1187 days,Wintersemester 1011,Tuesday,2011-02-01,19
+45,Schande,Schande,1999-04-07,,['Drama'],0.0,90.0,de,4319 days,Wintersemester 1011,Wednesday,2011-02-02,35
+46,RR - Railroad,,,,,,,,,Wintersemester 1011,Tuesday,2011-02-08,1
+47,Im Westen nichts Neues,All Quiet on the Western Front,2022-10-07,7.735,"['Drama', 'War', 'Action']",20000000.0,147.0,de,-6156 days,Wintersemester 0506,Tuesday,2005-11-29,61
+48,Frida,Frida,2024-03-08,7.9,['Documentary'],0.0,87.0,en,-6603 days,Wintersemester 0506,Wednesday,2006-02-08,81
+49,Promised Land,The Promised Land,2023-10-05,7.693,"['History', 'Drama']",8500000.0,127.0,da,-3614 days,Wintersemester 1314,Tuesday,2013-11-12,18
+50,Drecksau,Harrinator,2017-10-22,,['Comedy'],0.0,90.0,de,-1370 days,Wintersemester 1314,Tuesday,2014-01-21,24
+51,Bastard,Bastard,2015-10-16,4.7,['Horror'],0.0,82.0,en,-619 days,Wintersemester 1314,Tuesday,2014-02-04,3
+52,Texas Chainsaw Massacre,Texas Chainsaw Massacre,2022-02-18,5.214,"['Horror', 'Thriller']",20000000.0,83.0,en,-2669 days,Wintersemester 1415,Wednesday,2014-10-29,23
+53,Grand Budapest Vietnam,,,,,,,,,Wintersemester 1415,Tuesday,2014-11-11,91
+54,Dallas Buyer Club,,,,,,,,,Wintersemester 1415,Tuesday,2014-11-18,132
+55,Jackpot,Jackpot,2024-08-15,,"['Action', 'Comedy']",0.0,0.0,en,-3544 days,Wintersemester 1415,Tuesday,2014-12-02,9
+56,Monsieur Claude und seine Töchter,Serial (Bad) Weddings 2,2019-01-30,5.9,['Comedy'],18500000.0,99.0,fr,-1513 days,Wintersemester 1415,Tuesday,2014-12-09,186
+57,Mandela,Mandela,1987-09-20,,"['TV Movie', 'Drama']",0.0,135.0,en,9943 days,Wintersemester 1415,Wednesday,2014-12-10,34
+58,Marry Poppins,,,,,,,,,Wintersemester 1415,Wednesday,2015-01-14,36
+59,Feuerwerk am hellichten Tag,,,,,,,,,Wintersemester 1415,Wednesday,2015-01-21,7
+60,SpiderMan Spider Verse,Spider-Man: Across the Spider-Verse,2023-05-31,8.367,"['Animation', 'Action', 'Adventure', 'Science Fiction']",100000000.0,140.0,en,-1485 days,Sommersemester 19,Tuesday,2019-05-07,96
+61,Sneak 1,,,,,,,,,Sommersemester 19,Tuesday,2019-05-21,30
+62,Boys for Sale,Boys for Sale,1981-02-01,,,0.0,118.0,en,13994 days,Sommersemester 19,Monday,2019-05-27,112
+63,K Sneak 1,,,,,,,,,Sommersemester 19,Wednesday,2019-05-29,28
+64,Astrid,Astrid,2021-01-03,,['Documentary'],0.0,0.0,es,-578 days,Sommersemester 19,Wednesday,2019-06-05,52
+65,Dogman,Dogman,2023-09-27,7.841,"['Action', 'Drama', 'Crime']",22700000.0,115.0,fr,-1574 days,Sommersemester 19,Thursday,2019-06-06,5
+66,The End of Meat,The End of Meat,2017-09-14,,['Documentary'],0.0,94.0,de,650 days,Sommersemester 19,Wednesday,2019-06-26,38
+67,K Sneak 2,,,,,,,,,Sommersemester 19,Wednesday,2019-07-10,31
+68,Little Woman,a little woman,2023-06-02,,['Drama'],2.0,12.0,ca,-576 days,Wintersemester 2122,Wednesday,2021-11-03,42
+69,Nomandland,,,,,,,,,Wintersemester 2122,Wednesday,2021-11-10,42
+70,Mein Glück,Du bist mein Glück,1936-10-06,,['Drama'],0.0,0.0,de,27237 days,Sommersemester 11,Tuesday,2011-05-03,28
+71,This Prison where I live,This Prison Where I Live,2010-06-28,,['Documentary'],0.0,90.0,en,380 days,Sommersemester 11,Wednesday,2011-07-13,10
+72,Gesang der Flusskrebse,Where the Crawdads Sing,2022-07-14,7.549,"['Drama', 'Mystery', 'Romance']",24000000.0,126.0,en,-3738 days,Sommersemester 12,Thursday,2012-04-19,11
+73,The Story Won’t Die,The Story Won't Die,2021-04-29,,['Documentary'],0.0,83.0,en,727 days,Sommersemester 23,Wednesday,2023-04-26,17
+74,Alle reden übers Wetter,Talking About the Weather,2022-09-16,,['Drama'],0.0,89.0,de,235 days,Sommersemester 23,Tuesday,2023-05-09,8
+75,Animals,Animals,,,"['Crime', 'Thriller']",0.0,0.0,en,,Sommersemester 23,Wednesday,2023-06-07,1
+76,Sara Mardini – Gegen den Strom,Long Distance Swimmer: Sara Mardini,2024-03-23,,['Documentary'],0.0,88.0,en,-268 days,Sommersemester 23,Thursday,2023-06-29,10
+77,Safari,Safari,1956-06-20,,['Adventure'],0.0,90.0,en,22274 days,Sommersemester 17,Wednesday,2017-06-14,0
+78,The Tribe,The Tribe,1998-06-21,,['Drama'],0.0,105.0,en,6940 days,Sommersemester 17,Wednesday,2017-06-21,6
+79,Music & Lyrics,Music is on the Menu: Melim,2023-09-22,,"['Music', 'Documentary']",0.0,27.0,pt,-5819 days,Wintersemester 0708,Wednesday,2007-10-17,48
+80,Bahn unterm Hammer + The Navigators,,,,,,,,,Wintersemester 0809,Thursday,2008-11-06,10
+81,Deep Frozen,,,,,,,,,Wintersemester 0708,Tuesday,2007-11-13,17
+82,Hard Pill,Hard Pill,2005-07-15,,['Drama'],0.0,94.0,en,1238 days,Wintersemester 0809,Thursday,2008-12-04,37
+83,Ode an die Freude,The Ode to Joy,2006-06-17,,"['Drama', 'History', 'War', 'Music']",0.0,135.0,ja,542 days,Wintersemester 0708,Tuesday,2007-12-11,20
+84,Dealer,Dealer,2021-10-14,5.3,['Drama'],0.0,100.0,nl,-5021 days,Wintersemester 0708,Tuesday,2008-01-15,22
+85,Das Fräulein,Fraulein,2006-08-07,,['Drama'],0.0,81.0,de,533 days,Wintersemester 0708,Tuesday,2008-01-22,19
+86,Die Farbe des Ozeans,Color of the Ocean,2012-03-22,,['Drama'],0.0,95.0,de,1693 days,Wintersemester 1617,Wednesday,2016-11-09,60
+87,Silver Shoes,,,,,,,,,Wintersemester 1617,Tuesday,2016-11-29,68
+88,90 Minuten - Bei Abpfiff Frieden,The 90 Minute War,2016-06-30,,"['Comedy', 'Documentary']",0.0,90.0,he,167 days,Wintersemester 1617,Wednesday,2016-12-14,8
+89,Suicide Squad,Suicide Squad,2016-08-03,5.912,"['Action', 'Adventure', 'Fantasy']",175000000.0,122.0,en,-206 days,Wintersemester 1516,Sunday,2016-01-10,105
+90,Toni Erdmann,Toni Erdmann,2016-07-14,6.989,"['Comedy', 'Drama']",10000000.0,162.0,de,-185 days,Wintersemester 1516,Monday,2016-01-11,87
+91,Captain Fantastic,Captain Fantastic,2016-07-08,7.912,"['Adventure', 'Drama']",5000000.0,118.0,en,-173 days,Wintersemester 1516,Sunday,2016-01-17,119
+92,Lobster,Lobster,,6.86,['Comedy'],1500.0,6.0,en,,Wintersemester 1516,Sunday,2016-01-31,67
+93,Wiener Dog,Wiener-Dog,2016-06-24,5.633,"['Comedy', 'Drama']",0.0,88.0,en,-137 days,Wintersemester 1516,Monday,2016-02-08,13
+94,Man for a Day,Man for a Day,2012-07-19,,['Documentary'],0.0,96.0,en,1609 days,Wintersemester 1617,Wednesday,2016-12-14,7
+95,Mapplethorpe,Mapplethorpe,2019-03-01,6.6,"['Drama', 'History']",0.0,102.0,en,-772 days,Wintersemester 1617,Wednesday,2017-01-18,6
+96,Zwischen den Stühlen,Zwischen den Stühlen,2017-05-18,,,0.0,101.0,de,252 days,Wintersemester 1718,Thursday,2018-01-25,75
+97,Sein oder Nichtsein,Alles was recht ist - Sein oder Nichtsein,2011-01-20,,"['TV Movie', 'Comedy']",0.0,0.0,de,636 days,Wintersemester 1213,Wednesday,2012-10-17,42
+98,Work hard – play hard,Work Hard Play Hard,2012-04-12,,['Documentary'],0.0,90.0,de,208 days,Wintersemester 1213,Tuesday,2012-11-06,36
+99,Der Heiratsvermittler – Nesvatbov,,,,,,,,,Wintersemester 1213,Tuesday,2012-11-20,5
+100,Hinter der Tür,Hinter der Tür,,,['Drama'],0.0,0.0,de,,Wintersemester 1213,Wednesday,2012-11-21,23
+101,…und es kommt noch schlimmer - A bude hur,,,,,,,,,Wintersemester 1213,Tuesday,2012-12-04,10
+102,Kaddisch für einen Freund,Kaddisch für einen Freund,2012-03-15,,"['Drama', 'Comedy']",0.0,0.0,de,306 days,Wintersemester 1213,Tuesday,2013-01-15,8
+103,Ufo in your eyes,,,,,,,,,Wintersemester 1213,Tuesday,2013-01-29,8
+104,Töte mich,Kill Me,2012-04-25,,['Drama'],0.0,91.0,de,280 days,Wintersemester 1213,Wednesday,2013-01-30,7
+105,Wunschfilm,,,,,,,,,Wintersemester 1213,Wednesday,2013-02-06,23
+106,Janosch komm wir finden einen schatz,"Janosch – Komm, wir finden einen Schatz",2012-10-26,,"['Animation', 'Family']",0.0,0.0,de,31 days,Wintersemester 1213,Monday,2012-11-26,56
+107,System Error,System Error,2018-05-10,,['Documentary'],0.0,95.0,de,168 days,Wintersemester 1819,Thursday,2018-10-25,29
+108,Wildes Herz,Wild Heart,2018-04-12,7.02,"['Music', 'Documentary']",0.0,88.0,de,-155 days,Wintersemester 1718,Wednesday,2017-11-08,67
+109,The Cleaners,The Cleaners,2022-07-20,,,0.0,105.0,fr,-1345 days,Wintersemester 1819,Tuesday,2018-11-13,47
+110,Fetisch Karl Marx,Fetisch Karl Marx,2018-05-02,,['Documentary'],0.0,0.0,de,197 days,Wintersemester 1819,Thursday,2018-11-15,10
+111,Hamburger Gitter,Hamburger Gitter,2018-06-22,,['Documentary'],0.0,76.0,de,153 days,Wintersemester 1819,Thursday,2018-11-22,105
+112,Landrauschen,Landrauschen,2018-01-23,,"['Drama', 'Comedy']",0.0,105.0,de,316 days,Wintersemester 1819,Wednesday,2018-12-05,9
+113,Einer flog übers Kuckucksnest,,,,,,,,,Wintersemester 1819,Thursday,2018-12-13,31
+114,Foxtrot,Foxtrot,1976-03-01,,['Drama'],0.0,91.0,en,15633 days,Wintersemester 1819,Wednesday,2018-12-19,2
+115,Bad Banks ½,,,,,,,,,Wintersemester 1718,Tuesday,2018-01-09,5
+116,Bad Banke 2/2,,,,,,,,,Wintersemester 1718,Wednesday,2018-01-10,3
+117,Christopher Robin,Christopher Robin,2018-08-01,7.319,"['Adventure', 'Comedy', 'Family', 'Fantasy']",75000000.0,104.0,en,-198 days,Wintersemester 1718,Monday,2018-01-15,44
+118,Dora oder die sexuellen Neuroen,,,,,,,,,Wintersemester 1718,Tuesday,2018-01-16,15
+119,Tully,Tully,2018-05-04,6.783,"['Comedy', 'Drama']",0.0,96.0,en,-102 days,Wintersemester 1718,Monday,2018-01-22,10
+120,"Utoya, 22. Juli",Utøya: July 22,2018-03-09,7.2,"['History', 'Drama']",688960.0,92.0,no,-32 days,Wintersemester 1718,Monday,2018-02-05,32
+121,Under the Silver Lake,Under the Silver Lake,2018-06-21,6.4,"['Crime', 'Drama', 'Mystery']",8500000.0,139.0,en,-135 days,Wintersemester 1718,Tuesday,2018-02-06,16
+122,Teheren Tabu,,,,,,,,,Sommersemester 18,Tuesday,2018-04-17,17
+123,Hausu,Rorikon hausu: Oshimeri Junko,1983-11-18,,['Drama'],0.0,67.0,ja,12584 days,Sommersemester 18,Wednesday,2018-05-02,39
+124,Blackploitation DF,,,,,,,,,Sommersemester 18,Tuesday,2018-06-12,19
+125,Nichts als Gespenster,Nichts als Gespenster,2006-11-29,,"['Comedy', 'Drama']",0.0,119.0,de,503 days,Sommersemester 08,Tuesday,2008-04-15,39
+126,Ich kenn keinen - Allein unter Heteros,Talk Straight: The World of Rural Queers,2003-02-07,,['Documentary'],0.0,99.0,de,1929 days,Sommersemester 08,Tuesday,2008-05-20,81
+127,Weißt was geil wär,Weißt was geil wär...?!,2007-01-11,,['Comedy'],0.0,97.0,de,503 days,Sommersemester 08,Wednesday,2008-05-28,28
+128,WWW-What a Wonderful World,WWW: What a Wonderful World,2006-09-03,,"['Drama', 'Thriller']",0.0,99.0,en,639 days,Sommersemester 08,Tuesday,2008-06-03,25
+129,ostPunk!!!,OstPunk! Too much Future,2006-01-01,,['Documentary'],0.0,92.0,de,898 days,Sommersemester 08,Tuesday,2008-06-17,17
+130,Midnights Movies  + TRHPS,,,,,,,,,Sommersemester 08,Wednesday,2008-07-02,26
+131,Borat,Borat Subsequent Moviefilm,2020-10-23,6.5,['Comedy'],0.0,96.0,en,-4944 days,Sommersemester 07,Wednesday,2007-04-11,68
+132,Das Parfum,Das Parfüm: Die wahre Geschichte,2014-06-14,,['Documentary'],0.0,0.0,de,-2615 days,Sommersemester 07,Tuesday,2007-04-17,112
+133,Kukushka,Strocha: Trinity Rituals in Kukushka Village of Kochyovsky District,2023-01-01,,['Documentary'],0.0,45.0,ru,-5717 days,Sommersemester 07,Tuesday,2007-05-08,64
+134,Der die Tollkirsche ausgräbt & Nach 5 im Urwald,Der die Tollkirsche ausgräbt,2006-02-13,,,0.0,40.0,de,457 days,Sommersemester 07,Wednesday,2007-05-16,27
+135,Auberge Espagnole 1+2,,,,,,,,,Sommersemester 07,Tuesday,2007-06-19,127
+136,Der Lebensversicherer,Running on Empty,2006-02-14,,['Drama'],0.0,100.0,de,491 days,Sommersemester 07,Wednesday,2007-06-20,16
+137,Yossi & Jagger,Yossi,2012-05-16,6.9,"['Drama', 'Romance']",500000.0,84.0,he,-1771 days,Sommersemester 07,Wednesday,2007-07-11,20
+138,Jugend ohne Jugend,Godless Youth,2017-08-31,6.182,"['Science Fiction', 'Thriller', 'Drama']",0.0,114.0,de,-3053 days,Sommersemester 09,Wednesday,2009-04-22,17
+139,Frauenreferat: Das Fremde in Mir,,,,,,,,,Sommersemester 09,Tuesday,2009-04-28,43
+140,Schwulenreferat: The Times of Harvey Milk,,,,,,,,,Sommersemester 09,Tuesday,2009-05-05,34
+141,Israelwoche: Alles für meinen Vater,,,,,,,,,Sommersemester 09,Tuesday,2009-05-12,37
+142,Israelwoche: Waltz with Bashir,,,,,,,,,Sommersemester 09,Wednesday,2009-05-13,87
+143,Afrika Fokus: Tsotsi,,,,,,,,,Sommersemester 09,Tuesday,2009-05-26,50
+144,Polarkreis: So finster die Nacht,,,,,,,,,Sommersemester 09,Tuesday,2009-06-23,40
+145,Finnischer Tango,Finnischer Tango,2008-08-28,,"['Drama', 'Comedy']",0.0,90.0,de,306 days,Sommersemester 09,Tuesday,2009-06-30,7
+146,Polarkreis: Die Kunst des negativen Denkens,,,,,,,,,Sommersemester 09,Wednesday,2009-07-01,51
+147,Schotter wie Heu,Gravel Like Hay,2002-01-01,,['Documentary'],0.0,0.0,de,2744 days,Sommersemester 09,Tuesday,2009-07-07,14
+148,Künstlerwoche & Polarkr.: Drawing Restraint 9,,,,,,,,,Sommersemester 09,Wednesday,2009-07-08,13
+149,Polarkreis: Anderland,,,,,,,,,Sommersemester 09,Wednesday,2009-07-15,12
+150,Polarkreis: Into the Wild,,,,,,,,,Sommersemester 09,Wednesday,2009-07-22,42
+151,Morgen irgendwo am Meer,Morgen irgendwo am Meer,2023-04-15,,"['Romance', 'Comedy', 'Adventure']",0.0,0.0,de,201 days,Wintersemester 2324,Thursday,2023-11-02,11
+152,Jeder schreibt für sich allein,Melting Ink,2023-08-24,,['Documentary'],0.0,169.0,de,139 days,Wintersemester 2324,Wednesday,2024-01-10,5
+153,Broker,Broker,2010-12-31,,['Drama'],0.0,125.0,te,4778 days,Wintersemester 2324,Tuesday,2024-01-30,6
+154,Mishima,Miss Mishima,2011-09-15,,['Horror'],0.0,14.0,pt,4521 days,Wintersemester 2324,Wednesday,2024-01-31,20
+155,The Voices  durften wir umsonst zeigen,,,,,,,,,Wintersemester 1516,Tuesday,2016-02-02,19
+156,Deutsche Kurzfilmpreis-Auswahl,,,,,,,,,Sommersemester 13,Wednesday,2013-04-17,10
+157,Hanna Arendt,,,,,,,,,Sommersemester 13,Tuesday,2013-05-14,140
+158,Inuk,Inuk,2012-05-11,,"['Adventure', 'Drama']",0.0,90.0,kl,382 days,Sommersemester 13,Tuesday,2013-05-28,3
+159,Süßes Gift - Hilfe als Geschäft,Sweet Poison,2012-09-30,,['Documentary'],0.0,54.0,de,248 days,Sommersemester 13,Wednesday,2013-06-05,12
+160,Invasion,Invasion,1969-10-16,,['Drama'],0.0,123.0,es,15973 days,Sommersemester 13,Wednesday,2013-07-10,3
+161,Speed - Auf der Suche nach der verlorenen Zeit,Speed - In Search of Lost Time,2012-09-28,,['Documentary'],0.0,0.0,de,291 days,Sommersemester 13,Tuesday,2013-07-16,13
+162,Ich - Einfach unverbesserlich,Ich einfach unverbesserlich - 6 Mini-Movies Collection,2014-10-16,,,0.0,0.0,en,-1100 days,Wintersemester 1112,Wednesday,2011-10-12,81
+163,Joschka und Herr Fischer,Joschka und Herr Fischer,2011-05-19,,"['Documentary', 'History']",0.0,138.0,de,160 days,Wintersemester 1112,Wednesday,2011-10-26,107
+164,Der Albaner,The Albanian,2010-06-28,,['Drama'],0.0,105.0,sq,499 days,Wintersemester 1112,Wednesday,2011-11-09,20
+165,Unter Kontrolle,Under Control,2011-04-02,,['Documentary'],0.0,98.0,de,241 days,Wintersemester 1112,Tuesday,2011-11-29,14
+166,Burke und Hare,,,,,,,,,Wintersemester 1112,Tuesday,2011-12-06,32
+167,Roller Girl,Roller Girl,2020-04-23,,['Horror'],0.0,3.0,en,-3054 days,Wintersemester 1112,Tuesday,2011-12-13,19
+168,Der Dieb des Lichts,The Light Thief,2011-03-02,,['Drama'],0.0,80.0,ky,314 days,Wintersemester 1112,Tuesday,2012-01-10,11
+169,White Box,White Box,2006-10-10,,['Drama'],0.0,27.0,de,1925 days,Wintersemester 1112,Tuesday,2012-01-17,4
+170,Polnische Ostern,Polnische Ostern,2011-05-11,,['Comedy'],0.0,0.0,de,259 days,Wintersemester 1112,Wednesday,2012-01-25,16
+171,Wir schaffen das schon,Das schaffen wir schon,2017-09-07,,"['Comedy', 'Thriller']",0.0,0.0,de,-2046 days,Wintersemester 1112,Tuesday,2012-01-31,12
+172,In der Welt habt ihr Angst,In der Welt habt ihr Angst,2011-03-03,,['Drama'],90.0,109.0,de,341 days,Wintersemester 1112,Tuesday,2012-02-07,22
+173,Schau mich an!,Don't Look at Me That Way,2016-06-16,6.62,['Drama'],27500.0,88.0,de,-4054 days,Sommersemester 05,Wednesday,2005-05-11,38
+174,Mir zeynen do!,,,,,,,,,Sommersemester 05,Tuesday,2005-05-24,20
+175,Der Schmetterling,The Golden Butterfly,1926-07-31,,['Drama'],0.0,77.0,de,28802 days,Sommersemester 05,Wednesday,2005-06-08,43
+176,Coffee & Cigarettes,The Coffee Table,2024-04-19,6.96,"['Horror', 'Drama', 'Thriller', 'Comedy']",0.0,90.0,es,-6883 days,Sommersemester 05,Wednesday,2005-06-15,140
+177,Status Yo!,Status Yo!,2004-11-04,,"['Drama', 'Music']",0.0,118.0,de,244 days,Sommersemester 05,Wednesday,2005-07-06,29
+178,Zusammen,Alle zusammen - Eine Stadt steigt auf - Die Doku,2023-05-25,,['Documentary'],0.0,0.0,de,-6545 days,Sommersemester 05,Thursday,2005-06-23,15
+179,Das Fest,Impreza,2017-10-01,,['Documentary'],0.0,75.0,pl,-4482 days,Sommersemester 05,Friday,2005-06-24,9
+180,Dorfpunks,Dorfpunks,2009-10-10,,"['Comedy', 'Drama']",0.0,90.0,de,11 days,Wintersemester 0910,Wednesday,2009-10-21,59
+181,Home,Home,2015-03-18,6.8,"['Fantasy', 'Comedy', 'Animation', 'Science Fiction', 'Family']",135000000.0,94.0,en,-1954 days,Wintersemester 0910,Tuesday,2009-11-10,31
+182,Kleine Verbrechen,Small Crime,2008-11-17,,"['Comedy', 'Crime', 'Romance']",0.0,84.0,el,365 days,Wintersemester 0910,Tuesday,2009-11-17,41
+183,Sens Interdits,Sens interdits,2009-01-20,,,0.0,90.0,fr,308 days,Wintersemester 0910,Tuesday,2009-11-24,14
+184,Die Eisbombe,Die Eisbombe,2008-08-07,,"['Drama', 'Comedy']",0.0,95.0,de,482 days,Wintersemester 0910,Wednesday,2009-12-02,26
+185,The Lion King,The Lion King,2019-07-12,7.116,"['Adventure', 'Drama', 'Family', 'Animation']",260000000.0,118.0,en,-3495 days,Wintersemester 0910,Wednesday,2009-12-16,118
+186,Radio Rock Revolution,Something In The Air: A Rock Radio Revolution,,,['Documentary'],0.0,84.0,en,,Wintersemester 0910,Wednesday,2010-01-13,65
+187,Short Cut to Hollywood,Short Cut to Hollywood,2009-09-24,,['Comedy'],0.0,94.0,de,117 days,Wintersemester 0910,Tuesday,2010-01-19,18
+188,Das Herz von Jenin,The Heart of Jenin,2008-08-13,,['Documentary'],0.0,89.0,de,531 days,Wintersemester 0910,Tuesday,2010-01-26,37
+189,Nacht der Helden: Flash Gordon / Batman hält …,,,,,,,,,Wintersemester 0910,Wednesday,2010-02-10,56
+190,Princess,Princess Cursed in Time: Alchemist's Quest,2022-11-17,,"['Family', 'Fantasy', 'Comedy']",0.0,133.0,cs,-4656 days,Wintersemester 0910,Wednesday,2010-02-17,9
+191,Der Kuaför aus der Keupstraße,The Barber And The Bomb,2016-02-25,,['Documentary'],0.0,97.0,de,104 days,Sommersemester 16,Wednesday,2016-06-08,25
+192,Klassiker Sneak,,,,,,,,,Sommersemester 22,Thursday,2022-04-21,16
+193,Der Rausch,Anselm,2023-10-12,7.043,['Documentary'],0.0,93.0,de,-531 days,Sommersemester 22,Friday,2022-04-29,3
+194,The Suicide Squade,Suicide Squad,1991-01-01,,,0.0,0.0,en,11442 days,Sommersemester 22,Saturday,2022-04-30,12
+195,Klassiker Sneak,,,,,,,,,Sommersemester 22,Wednesday,2022-06-01,34
+196,Die Unbeugsamen,Die Unbeugsamen,2021-08-26,,['Documentary'],0.0,99.0,de,300 days,Sommersemester 22,Wednesday,2022-06-22,14
+197,Are you lonesome tonight?,Are You Lonesome Tonight?,2021-06-12,,"['Crime', 'Drama', 'Mystery', 'Thriller', 'Romance']",0.0,95.0,zh,382 days,Sommersemester 22,Wednesday,2022-06-29,3
+198,Klassiker Sneak,,,,,,,,,Sommersemester 22,Thursday,2022-07-07,7
+199,Pettit Maman,,,,,,,,,Sommersemester 22,Wednesday,2022-07-13,5

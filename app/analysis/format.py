@@ -35,7 +35,7 @@ def getSave():
 
 def add_bar_label(ax, index, currPos):
     for i, ind in enumerate(index):
-        ax.annotate(str(ind), (currPos+i - 0.2, 2), rotation = 'vertical', 
+        ax.annotate(str(ind), (currPos+i - 0.265, 2), rotation = 'vertical', 
                     fontsize = 7, color = "w", style = "oblique")
     return i + 1
 

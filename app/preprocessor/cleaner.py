@@ -4,10 +4,14 @@ from .formatDate import convert_date
 #remove unwanted characters from the title
 def clean_title(title):
     #list of words we want to delete
-    naughty_list = [' \(OmU\)', " \(OV\)", " OmU", " OmeU", " OV"]
+    naughty_list = ["OmU", "OmeU", "OV", "Klassiker:"]
     #check titles and remove if something matches
     for scratch in naughty_list:
-        title = re.sub(scratch, "", title)
+        title = re.sub(f"{scratch}", "", title)
+
+    title = re.sub(r"\(.*\)", "", title)
+    title = re.sub(r"\*", "", title)
+    title = title.strip()
     return title
 
 def extract_wanted(df, year):
