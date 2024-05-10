@@ -10,10 +10,14 @@
 -e file:.
 beautifulsoup4==4.12.3
     # via k-i-no
+blinker==1.8.2
+    # via flask
 certifi==2024.2.2
     # via requests
 charset-normalizer==3.3.2
     # via requests
+click==8.1.7
+    # via flask
 contourpy==1.2.1
     # via matplotlib
 cycler==0.12.1
@@ -22,14 +26,23 @@ defusedxml==0.7.1
     # via odfpy
 et-xmlfile==1.1.0
     # via openpyxl
+flask==3.0.3
+    # via k-i-no
 fonttools==4.51.0
     # via matplotlib
 idna==3.7
     # via requests
+itsdangerous==2.2.0
+    # via flask
+jinja2==3.1.4
+    # via flask
 joblib==1.4.2
     # via scikit-learn
 kiwisolver==1.4.5
     # via matplotlib
+markupsafe==2.1.5
+    # via jinja2
+    # via werkzeug
 matplotlib==3.8.4
     # via k-i-no
 numpy==1.26.4
@@ -75,5 +88,7 @@ tzdata==2024.1
     # via pandas
 urllib3==2.2.1
     # via requests
+werkzeug==3.0.3
+    # via flask
 xlrd==2.0.1
     # via k-i-no
