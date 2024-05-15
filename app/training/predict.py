@@ -9,7 +9,8 @@ def predict_attendance(search, date, model, enc, scaler):
     query.columns= ['Titel', 'Date', 'Attendance']
     
     res = append_meta(query)
-
+    if res['Rating'].isnull().values.any():
+        res['Rating'] = 5.0
     if res.loc[:, res.columns != 'Attendance'].isnull().values.any():
         return "DIE SUCHE WAR NICHT ERFOLGREICH \nKEINE PREDICTION MÖGLICH"
 

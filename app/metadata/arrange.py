@@ -38,11 +38,14 @@ def append_meta(rawDf: pd.DataFrame) -> pd.DataFrame:
     time['MovieAge'] = movie_age(time['Release_Date'], time['Date'])
 
     time.rename(columns = {'Titel':'OG_Title'}, inplace = True)    
-
+    
     # orderd Okayeg
     orderd = time[['OG_Title','TMDB_Title', 'Release_Date', 'Rating', 'Genre', 
                 'Budget', 'Runtime', 'Original_Language', 'MovieAge', 'Semester', 'Weekday', 
                 'Date', 'Attendance']]
+    # Fill na Ratings with mean of the Semester
+    orderd['Rating'] = orderd['Rating'].fillna(orderd['Rating'].mean())
+    
     return orderd
 
 def missing(cleanDf: pd.DataFrame) -> pd.DataFrame:

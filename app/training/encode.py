@@ -31,7 +31,7 @@ def drop_names(full: pd.DataFrame) -> pd.DataFrame:
     return full.drop(['OG_Title', 'TMDB_Title'], axis = 1)
 
 def explode_genre(final: pd.DataFrame) -> pd.DataFrame:
-    if type(final['Genre'][0]) != list:
+    if not isinstance(final['Genre'][0], list):
         final['Genre'] = final['Genre'].apply(lambda x: x[1:-1].replace(' ', '').replace("'", '').split(','))
     final = final.explode('Genre')
     return final

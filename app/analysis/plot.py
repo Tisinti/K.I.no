@@ -1,6 +1,7 @@
 from .format import cutCovid, getSave, formatfullCSV, add_bar_label, week_prepare
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
 
 a_cov, b_cov = cutCovid()
 a_save, b_save = getSave()
@@ -163,6 +164,26 @@ def createGenrePlot():
     plt.savefig("data/plots/GenrePlot.png", dpi = 250)
     plt.clf()
 
+def createPlotYear(yearPath: str):
+    semester_df = pd.read_csv(yearPath)
+    file_name = os.path.basename(yearPath)
+    file_name = os.path.splitext(file_name)[0]
+    year = file_name.split("_")[1]
+
+    plt.bar(x=semester_df['Titel'], height=semester_df['Attendance'], color="blue")
+
+    plt.xticks(rotation=90)
+    plt.tick_params(bottom = False)
+
+    plt.xlabel('Film', fontweight = 'bold')
+    plt.ylabel('Besucherzahl', fontweight = 'bold')
+    if 'winter' in yearPath:    
+        plt.title(f"WiSe {year}", fontweight = 'bold')
+    else:
+        plt.title(f"Sose {year}", fontweight = 'bold')
+    
+    plt.savefig(f"data/plots/{file_name}.png", dpi = 250, bbox_inches = "tight")
+    plt.clf()
 
 def createAllPlotsPipe():
     createYearPlot()

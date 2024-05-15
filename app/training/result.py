@@ -51,8 +51,8 @@ def eval(model):
     return 
 
 def predict(model):
-    search = "Der Gott des Gemetzels"
-    date = "22.11.2023"
+    search = "Skinamarink"
+    date = "14.05.2024"
     sel_model = get_model(model)
     encoder = get_encoder(enc)
     max_scaler = get_encoder(scaler)
@@ -62,10 +62,10 @@ def predict(model):
 
 def iterate_models():
     for model in [rf,lr,svr,lasso,ridge,gb,br]:
-       print("----------------------------------------")
-       print(f"CURRENT MODEL: {type(model).__name__} \n")
-       print("EVALUATION:")
-       eval(model)
-       predict(model)
+        print("----------------------------------------")
+        print(f"CURRENT MODEL: {type(model).__name__} \n")
+        print("EVALUATION:")
+        eval(model)
+        predict(model)
        
    
