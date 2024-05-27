@@ -8,43 +8,71 @@
 #   with-sources: false
 
 -e file:.
+annotated-types==0.7.0
+    # via pydantic
+anyio==4.4.0
+    # via httpx
+    # via starlette
+    # via watchfiles
 beautifulsoup4==4.12.3
     # via k-i-no
-blinker==1.8.2
-    # via flask
 certifi==2024.2.2
+    # via httpcore
+    # via httpx
     # via requests
 charset-normalizer==3.3.2
     # via requests
 click==8.1.7
-    # via flask
+    # via typer
+    # via uvicorn
 contourpy==1.2.1
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
 defusedxml==0.7.1
     # via odfpy
+dnspython==2.6.1
+    # via email-validator
+email-validator==2.1.1
+    # via fastapi
 et-xmlfile==1.1.0
     # via openpyxl
-flask==3.0.3
+exceptiongroup==1.2.1
+    # via anyio
+fastapi==0.111.0
     # via k-i-no
+fastapi-cli==0.0.4
+    # via fastapi
 fonttools==4.51.0
     # via matplotlib
+h11==0.14.0
+    # via httpcore
+    # via uvicorn
+httpcore==1.0.5
+    # via httpx
+httptools==0.6.1
+    # via uvicorn
+httpx==0.27.0
+    # via fastapi
 idna==3.7
+    # via anyio
+    # via email-validator
+    # via httpx
     # via requests
-itsdangerous==2.2.0
-    # via flask
 jinja2==3.1.4
-    # via flask
+    # via fastapi
 joblib==1.4.2
     # via scikit-learn
 kiwisolver==1.4.5
     # via matplotlib
+markdown-it-py==3.0.0
+    # via rich
 markupsafe==2.1.5
     # via jinja2
-    # via werkzeug
 matplotlib==3.8.4
     # via k-i-no
+mdurl==0.1.2
+    # via markdown-it-py
 numpy==1.26.4
     # via contourpy
     # via matplotlib
@@ -55,12 +83,20 @@ odfpy==1.4.1
     # via k-i-no
 openpyxl==3.1.2
     # via k-i-no
+orjson==3.10.3
+    # via fastapi
 packaging==24.0
     # via matplotlib
 pandas==2.2.2
     # via k-i-no
 pillow==10.3.0
     # via matplotlib
+pydantic==2.7.1
+    # via fastapi
+pydantic-core==2.18.2
+    # via pydantic
+pygments==2.18.0
+    # via rich
 pyparsing==3.1.2
     # via matplotlib
 python-dateutil==2.9.0.post0
@@ -68,27 +104,58 @@ python-dateutil==2.9.0.post0
     # via pandas
 python-dotenv==1.0.1
     # via k-i-no
+    # via uvicorn
+python-multipart==0.0.9
+    # via fastapi
 pytz==2024.1
     # via pandas
+pyyaml==6.0.1
+    # via uvicorn
 requests==2.31.0
     # via k-i-no
+rich==13.7.1
+    # via typer
 scikit-learn==1.4.2
     # via k-i-no
 scipy==1.13.0
     # via scikit-learn
+shellingham==1.5.4
+    # via typer
 six==1.16.0
     # via python-dateutil
+sniffio==1.3.1
+    # via anyio
+    # via httpx
 soupsieve==2.5
     # via beautifulsoup4
+starlette==0.37.2
+    # via fastapi
 threadpoolctl==3.5.0
     # via scikit-learn
 tqdm==4.66.4
     # via k-i-no
+typer==0.12.3
+    # via fastapi-cli
+typing-extensions==4.12.0
+    # via anyio
+    # via fastapi
+    # via pydantic
+    # via pydantic-core
+    # via typer
+    # via uvicorn
 tzdata==2024.1
     # via pandas
+ujson==5.10.0
+    # via fastapi
 urllib3==2.2.1
     # via requests
-werkzeug==3.0.3
-    # via flask
+uvicorn==0.29.0
+    # via fastapi
+uvloop==0.19.0
+    # via uvicorn
+watchfiles==0.22.0
+    # via uvicorn
+websockets==12.0
+    # via uvicorn
 xlrd==2.0.1
     # via k-i-no

@@ -51,8 +51,8 @@ def eval(model):
     return 
 
 def predict(model):
-    search = "Skinamarink"
-    date = "14.05.2024"
+    search = "Picknick in Moria"
+    date = "16.05.2024"
     sel_model = get_model(model)
     encoder = get_encoder(enc)
     max_scaler = get_encoder(scaler)

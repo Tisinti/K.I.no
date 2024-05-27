@@ -32,6 +32,8 @@ def append_time(rawDf: pd.DataFrame):
     return timeDf
 
 def append_meta(rawDf: pd.DataFrame) -> pd.DataFrame:
+    pd.set_option('future.no_silent_downcasting', True)    
+    
     full = pd.concat([rawDf, get_meta_df(rawDf)], axis=1)
     time = append_time(full)
 
@@ -45,7 +47,7 @@ def append_meta(rawDf: pd.DataFrame) -> pd.DataFrame:
                 'Date', 'Attendance']]
     # Fill na Ratings with mean of the Semester
     orderd['Rating'] = orderd['Rating'].fillna(orderd['Rating'].mean())
-    
+
     return orderd
 
 def missing(cleanDf: pd.DataFrame) -> pd.DataFrame:
