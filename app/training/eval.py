@@ -20,7 +20,7 @@ def run_cross_val(df: DataFrame, model, enc, scaler) -> np.array:
     n = 10
     score = np.empty(n, dtype=float)
 
-    for i in range(0,n):
+    for i in range(0, n):
         df = df.reset_index(drop=True)
 
         # Shuffle randomly for each fold

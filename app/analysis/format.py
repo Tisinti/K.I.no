@@ -12,7 +12,7 @@ def formatfullCSV():
     cineData['MovieAge'] = pd.to_timedelta(cineData['MovieAge'])
     cineData = cineData.drop(columns=["Unnamed: 0"])
     cineData['year'] = cineData['Semester'].str.split(" ").str[1]
-
+    
     return cineData
 
 def cutCovid():
@@ -21,7 +21,7 @@ def cutCovid():
     a_cov = cineData[cineData['Date'] > pd.to_datetime('2020-3-1')]
     #before covid
     b_cov = cineData[cineData['Date'] < pd.to_datetime('2020-3-1')]
-
+    
     return a_cov, b_cov
 
 def getSave():

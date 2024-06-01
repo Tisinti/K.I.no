@@ -16,16 +16,16 @@ load_dotenv()
 
 app = FastAPI()
 
+
 @app.get("/")
 async def root():
-    return {"message" : "World"}
+    return {"message": "World"}
 
 
 @app.get("/prediction/{movie}")
 async def predict(movie: str, date: str) -> dict:
-	model, enc, scaler= get_model(ranfor), get_encoder(ordenc), get_encoder(max)
-	prediction = predict_attendance(model=model, enc=enc, 
-                            		search=movie, date=date, scaler=scaler)
-	return {"prediction" : prediction}
-
-
+    model, enc, scaler = get_model(ranfor), get_encoder(ordenc), get_encoder(max)
+    prediction = predict_attendance(
+        model=model, enc=enc, search=movie, date=date, scaler=scaler
+    )
+    return {"prediction": prediction}
