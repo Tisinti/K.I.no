@@ -16,7 +16,7 @@ anyio==4.4.0
     # via watchfiles
 beautifulsoup4==4.12.3
     # via k-i-no
-certifi==2024.2.2
+certifi==2024.6.2
     # via httpcore
     # via httpx
     # via requests
@@ -43,7 +43,7 @@ fastapi==0.111.0
     # via k-i-no
 fastapi-cli==0.0.4
     # via fastapi
-fonttools==4.51.0
+fonttools==4.53.0
     # via matplotlib
 h11==0.14.0
     # via httpcore
@@ -69,7 +69,7 @@ markdown-it-py==3.0.0
     # via rich
 markupsafe==2.1.5
     # via jinja2
-matplotlib==3.8.4
+matplotlib==3.9.0
     # via k-i-no
 mdurl==0.1.2
     # via markdown-it-py
@@ -81,7 +81,7 @@ numpy==1.26.4
     # via scipy
 odfpy==1.4.1
     # via k-i-no
-openpyxl==3.1.2
+openpyxl==3.1.3
     # via k-i-no
 orjson==3.10.3
     # via fastapi
@@ -91,9 +91,9 @@ pandas==2.2.2
     # via k-i-no
 pillow==10.3.0
     # via matplotlib
-pydantic==2.7.1
+pydantic==2.7.3
     # via fastapi
-pydantic-core==2.18.2
+pydantic-core==2.18.4
     # via pydantic
 pygments==2.18.0
     # via rich
@@ -111,13 +111,13 @@ pytz==2024.1
     # via pandas
 pyyaml==6.0.1
     # via uvicorn
-requests==2.31.0
+requests==2.32.3
     # via k-i-no
 rich==13.7.1
     # via typer
-scikit-learn==1.4.2
+scikit-learn==1.5.0
     # via k-i-no
-scipy==1.13.0
+scipy==1.13.1
     # via scikit-learn
 shellingham==1.5.4
     # via typer
@@ -136,7 +136,7 @@ tqdm==4.66.4
     # via k-i-no
 typer==0.12.3
     # via fastapi-cli
-typing-extensions==4.12.0
+typing-extensions==4.12.1
     # via anyio
     # via fastapi
     # via pydantic
@@ -149,7 +149,7 @@ ujson==5.10.0
     # via fastapi
 urllib3==2.2.1
     # via requests
-uvicorn==0.29.0
+uvicorn==0.30.1
     # via fastapi
 uvloop==0.19.0
     # via uvicorn
