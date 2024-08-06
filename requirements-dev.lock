@@ -72,6 +72,8 @@ pytz==2024.1
     # via pandas
 requests==2.31.0
     # via k-i-no
+ruff==0.0.285
+    # via dev-dependencies
 scikit-learn==1.4.2
     # via k-i-no
 scipy==1.13.0

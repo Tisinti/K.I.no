@@ -1,49 +1,53 @@
 from dotenv import load_dotenv
 import pandas as pd
 import os
+from typing import Tuple
+
 load_dotenv()
 
 
-def formatfullCSV():
+def format_full_csv() -> pd.DataFrame:
     save = pd.read_csv(os.getenv("FULL_CSV"), parse_dates=['Date'])
     missing = pd.read_csv(os.getenv("MISSING_CSV"), parse_dates=['Date'])
 
-    cineData = pd.concat([save, missing], axis=0, ignore_index=True)
-    cineData['MovieAge'] = pd.to_timedelta(cineData['MovieAge'])
-    cineData = cineData.drop(columns=["Unnamed: 0"])
-    cineData['year'] = cineData['Semester'].str.split(" ").str[1]
+    cine_data = pd.concat([save, missing], axis=0, ignore_index=True)
+    cine_data['MovieAge'] = pd.to_timedelta(cine_data['MovieAge'])
+    cine_data = cine_data.drop(columns=["Unnamed: 0"])
+    cine_data['year'] = cine_data['Semester'].str.split(" ").str[1]
 
-    return cineData
+    return cine_data
 
-def cutCovid():
-    cineData = formatfullCSV()
-    #after covid
-    a_cov = cineData[cineData['Date'] > pd.to_datetime('2020-3-1')]
-    #before covid
-    b_cov = cineData[cineData['Date'] < pd.to_datetime('2020-3-1')]
 
-    return a_cov, b_cov
+def cut_covid() -> Tuple[pd.DataFrame, pd.DataFrame]:
+    cine_data = format_full_csv()
+    # after covid
+    after_covid = cine_data[cine_data['Date'] > pd.to_datetime('2020-03-01')]
+    # before covid
+    before_covid = cine_data[cine_data['Date'] < pd.to_datetime('2020-03-01')]
 
-def getSave():
+    return after_covid, before_covid
+
+
+def get_save() -> Tuple[pd.DataFrame, pd.DataFrame]:
     save = pd.read_csv(os.getenv("FULL_CSV"), parse_dates=['Date'])
 
-    a_save = save[save['Date'] > pd.to_datetime('2020-3-1')]
-    #before covid
-    b_save = save[save['Date'] < pd.to_datetime('2020-3-1')]
+    after_save = save[save['Date'] > pd.to_datetime('2020-03-01')]
+    # before covid
+    before_save = save[save['Date'] < pd.to_datetime('2020-03-01')]
 
-    return a_save, b_save
+    return after_save, before_save
 
-def add_bar_label(ax, index, currPos):
+
+def add_bar_label(ax, index: pd.Index, curr_pos: int) -> int:
     for i, ind in enumerate(index):
-        ax.annotate(str(ind), (currPos+i - 0.265, 2), rotation = 'vertical', 
-                    fontsize = 7, color = "w", style = "oblique")
+        ax.annotate(str(ind), (curr_pos + i - 0.265, 2), rotation='vertical',
+                    fontsize=7, color="w", style="oblique")
     return i + 1
 
+
 def week_prepare(df: pd.DataFrame) -> pd.Series:
-    aha = df
-    df = df.groupby(['Weekday'])['Attendance'].mean()
-    df = df[aha.groupby(['Weekday'])['Attendance'].count() > 10]
-    df = df.reindex(['Tuesday', 'Wednesday', "Thursday"])
-    df = df.drop(columns=['count'])
-    
-    return df
+    grouped = df.groupby(['Weekday'])['Attendance'].mean()
+    filtered = grouped[df.groupby(['Weekday'])['Attendance'].count() > 10]
+    ordered = filtered.reindex(['Tuesday', 'Wednesday', 'Thursday'])
+
+    return ordered

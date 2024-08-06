@@ -1,13 +1,21 @@
 from datetime import datetime as dt
+from typing import Union
+
 import pandas as pd
+from sklearn.base import BaseEstimator
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+
 from app.metadata import append_meta
 from app.training import preprocess
 
-def predict_attendance(search, date, model, enc, scaler):
+
+def predict_attendance(
+        search: str, date: str, model: BaseEstimator, enc: OneHotEncoder, scaler: StandardScaler
+) -> Union[int, str]:
     date = dt.strptime(date, "%d.%m.%Y")
-    query = pd.DataFrame(list(zip([search],[date], [None])))
-    query.columns= ['Titel', 'Date', 'Attendance']
-    
+    query = pd.DataFrame(list(zip([search], [date], [None])))
+    query.columns = ['Titel', 'Date', 'Attendance']
+
     res = append_meta(query)
     if res['Rating'].isnull().values.any():
         res['Rating'] = 5.0
@@ -19,7 +27,3 @@ def predict_attendance(search, date, model, enc, scaler):
     res = res.drop("Attendance", axis=1)
 
     return round(model.predict(res).mean())
-
-
-
-    
