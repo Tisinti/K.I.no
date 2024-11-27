@@ -1,7 +1,7 @@
 import pandas as pd
-from format import cutCovid
+from format import cut_covid
 
 def getCutMedian():
-    a, b = cutCovid()
+    a, b = cut_covid()
     return a.median(), b.median()
 

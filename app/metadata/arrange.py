@@ -1,64 +1,65 @@
+import pandas as pd
+from typing import Tuple
+
 from app.search import SearchMovie
 from .add_time import add_semester, date_to_weekday, movie_age
-import pandas as pd 
 
 
-def movie_metadata(search):
+def movie_metadata(search: str) -> Tuple[str, str, float, list, str, int, int]:
     movie = SearchMovie(search).meta
-    
+
     title = movie.title
     release_date = movie.release_date
     rating = movie.rating
     genre_ids = movie.genre
-    lan = movie.language
+    language = movie.language
     budget = movie.budget
     runtime = movie.runtime
 
-    return title, release_date, rating, genre_ids, lan, budget, runtime
+    return title, release_date, rating, genre_ids, language, budget, runtime
 
-def get_meta_df(rawDf: pd.DataFrame) -> pd.DataFrame:
-    meta = pd.DataFrame(list(rawDf['Titel'].apply(movie_metadata)))
-    meta.columns =['TMDB_Title', 'Release_Date', 'Rating', 'Genre', 
-                   'Original_Language', 'Budget', 'Runtime']
+
+def get_meta_df(raw_df: pd.DataFrame) -> pd.DataFrame:
+    meta = pd.DataFrame(list(raw_df['Titel'].apply(movie_metadata)))
+    meta.columns = ['TMDB_Title', 'Release_Date', 'Rating', 'Genre',
+                    'Original_Language', 'Budget', 'Runtime']
 
     return meta
 
-def append_time(rawDf: pd.DataFrame):
-    timeDf = rawDf
 
-    timeDf['Date'] = pd.to_datetime(timeDf['Date']).dt.date
-    timeDf['Semester'] = timeDf['Date'].apply(add_semester)
-    timeDf['Weekday'] = timeDf['Date'].apply(date_to_weekday)
-    return timeDf
+def append_time(raw_df: pd.DataFrame) -> pd.DataFrame:
+    time_df = raw_df.copy()
 
-def append_meta(rawDf: pd.DataFrame) -> pd.DataFrame:
-    full = pd.concat([rawDf, get_meta_df(rawDf)], axis=1)
-    time = append_time(full)
+    time_df['Date'] = pd.to_datetime(time_df['Date']).dt.date
+    time_df['Semester'] = time_df['Date'].apply(add_semester)
+    time_df['Weekday'] = time_df['Date'].apply(date_to_weekday)
 
-    time['MovieAge'] = movie_age(time['Release_Date'], time['Date'])
+    return time_df
 
-    time.rename(columns = {'Titel':'OG_Title'}, inplace = True)    
-    
-    # orderd Okayeg
-    orderd = time[['OG_Title','TMDB_Title', 'Release_Date', 'Rating', 'Genre', 
-                'Budget', 'Runtime', 'Original_Language', 'MovieAge', 'Semester', 'Weekday', 
-                'Date', 'Attendance']]
-    # Fill na Ratings with mean of the Semester
-    orderd['Rating'] = orderd['Rating'].fillna(orderd['Rating'].mean())
-    
-    return orderd
 
-def missing(cleanDf: pd.DataFrame) -> pd.DataFrame:
-    return  cleanDf[(cleanDf.isna().any(axis=1)) | (cleanDf['MovieAge'] <= pd.Timedelta(0))]
+def append_meta(raw_df: pd.DataFrame) -> pd.DataFrame:
+    full_df = pd.concat([raw_df, get_meta_df(raw_df)], axis=1)
+    time_df = append_time(full_df)
 
-def clean(rawDf: pd.DataFrame) -> pd.DataFrame:
-    cleanDf = rawDf
+    time_df['MovieAge'] = movie_age(time_df['Release_Date'], time_df['Date'])
+    time_df.rename(columns={'Titel': 'OG_Title'}, inplace=True)
 
-    #Currently cleaning during iteration
-    cleanDf = cleanDf.dropna(how='any')
-    # Throw out movies that have come out after being shown (wrong search result)
-    cleanDf = cleanDf[cleanDf['MovieAge'] >= pd.Timedelta(0)]
-    # Throw out Sneaks
-    cleanDf = cleanDf[~cleanDf['OG_Title'].str.contains("sneak", case=False)]
+    ordered_df = time_df[['OG_Title', 'TMDB_Title', 'Release_Date', 'Rating', 'Genre',
+                          'Budget', 'Runtime', 'Original_Language', 'MovieAge', 'Semester', 'Weekday',
+                          'Date', 'Attendance']]
 
-    return cleanDf
+    ordered_df['Rating'] = ordered_df['Rating'].fillna(ordered_df['Rating'].mean())
+
+    return ordered_df
+
+
+def missing(clean_df: pd.DataFrame) -> pd.DataFrame:
+    return clean_df[(clean_df.isna().any(axis=1)) | (clean_df['MovieAge'] <= pd.Timedelta(0))]
+
+
+def clean(raw_df: pd.DataFrame) -> pd.DataFrame:
+    clean_df = raw_df.dropna(how='any')
+    clean_df = clean_df[clean_df['MovieAge'] >= pd.Timedelta(0)]
+    clean_df = clean_df[~clean_df['OG_Title'].str.contains("sneak", case=False)]
+
+    return clean_df

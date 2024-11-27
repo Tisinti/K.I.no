@@ -1,6 +1,6 @@
 from matplotlib import rcParams
-from .plot import createAllPlotsPipe
-from .plot import createPlotYear
 
+from .plot import create_all_plots_pipe
+from .plot import create_plot_year
 
 rcParams['font.family'] = ['serif']

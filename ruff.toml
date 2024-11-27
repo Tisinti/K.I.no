@@ -1,0 +1,29 @@
+# Specify the line length
+line-length = 120
+
+# List of rules to enable (all are enabled by default)
+lint.select = [
+    "E", # Pycodestyle errors
+    "F", # Pyflakes
+    "W", # Pycodestyle warnings
+    "C90", # McCabe complexity
+]
+
+# List of rules to ignore
+lint.ignore = [
+    "E203", # Whitespace before ':'
+    "E266", # Too many leading '#' for block comment
+    "E501", # Line too long
+    "F403", # 'from module import *' used; unable to detect undefined names
+    "F401", # Module imported but unused
+]
+
+# Exclude certain directories
+exclude = [
+    "venv",
+    "tests",
+    "migrations",
+]
+
+# Enable autofix on save (if you want this feature)
+fix = true
