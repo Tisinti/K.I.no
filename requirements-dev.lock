@@ -6,6 +6,8 @@
 #   features: []
 #   all-features: false
 #   with-sources: false
+#   generate-hashes: false
+#   universal: false
 
 -e file:.
 beautifulsoup4==4.12.3
@@ -73,7 +75,6 @@ pytz==2024.1
 requests==2.31.0
     # via k-i-no
 ruff==0.0.285
-    # via dev-dependencies
 scikit-learn==1.4.2
     # via k-i-no
 scipy==1.13.0

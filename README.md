@@ -26,5 +26,32 @@ They provided the data i will use to train the model! The model will also only w
 
 https://www.asta-trier.de/cineasta/
 
+## Setup Guide
+
+This guide is for starting `K.I.no` app.
+
+> You may also use the Dockerfile to run the app.
+
+1. Clone this repository.
+
+```bash
+git clone https://github.com/Tisinti/K.I.no.git
+```
+
+2. Install dependencies inluding the correct python version using [rye](https://rye.astral.sh/).
+
+```bash
+rye sync
+```
+
+3.  Apply your virtual enviroment and start the app
+
+```bash
+source .venv/bin/activate
+python main.py
+```
+
+
+
 
 
